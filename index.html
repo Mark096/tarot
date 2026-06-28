@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot — Leitura das Cartas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #07050f;
+      --bg2:          #100d20;
+      --card-bg:      #111028;
+      --gold:         #c9a84c;
+      --gold-light:   #f0d47a;
+      --gold-dim:     #7a6028;
+      --purple:       #5c2080;
+      --purple-light: #9b5dc0;
+      --text:         #e8d5b7;
+      --text-dim:     #9a8b75;
+      --border:       rgba(201,168,76,.25);
+      --border-hi:    rgba(201,168,76,.75);
+      --pos:          #1e5c2e;
+      --pos-text:     #7dbb8e;
+      --neg:          #5c1e1e;
+      --neg-text:     #c07d7d;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IM Fell English', Georgia, serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 15% 40%, rgba(92,32,128,.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 15%, rgba(50,20,100,.2)  0%, transparent 45%),
+        radial-gradient(ellipse at 50% 95%, rgba(20,10,50,.3)   0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    #stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+
+    /* ─── Layout ───────────────────────────────── */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    /* ─── Header ───────────────────────────────── */
+    header { text-align: center; padding: 4rem 0 3.5rem; }
+
+    .header-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .orn-line {
+      flex: 1;
+      max-width: 220px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold));
+    }
+    .orn-line.r { background: linear-gradient(to left, transparent, var(--gold)); }
+
+    h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: .12em;
+      text-shadow: 0 0 40px rgba(201,168,76,.45), 0 0 80px rgba(201,168,76,.15);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 1.05rem;
+      margin-top: .7rem;
+      letter-spacing: .06em;
+    }
+
+    /* ─── Section title ────────────────────────── */
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--gold);
+      text-align: center;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-title::before,
+    .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    section { margin-bottom: 3rem; }
+
+    /* ─── Count buttons ────────────────────────── */
+    .count-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-count {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'Cinzel', serif;
+      padding: 1.4rem 2.2rem;
+      cursor: pointer;
+      transition: all .35s ease;
+      min-width: 150px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-count::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(92,32,128,.25), rgba(201,168,76,.08));
+      opacity: 0;
+      transition: opacity .35s;
+    }
+    .btn-count:hover::before, .btn-count.active::before { opacity: 1; }
+    .btn-count:hover, .btn-count.active {
+      border-color: var(--gold);
+      box-shadow: 0 0 28px rgba(201,168,76,.18), inset 0 0 20px rgba(92,32,128,.1);
+    }
+
+    .btn-count-n {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      transition: all .35s;
+    }
+    .btn-count-l {
+      display: block;
+      font-size: .7rem;
+      color: var(--text-dim);
+      margin-top: .4rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .btn-count:hover .btn-count-n,
+    .btn-count.active .btn-count-n {
+      color: var(--gold-light);
+      text-shadow: 0 0 12px rgba(240,212,122,.5);
+    }
+
+    /* ─── Step 2 / 3 hidden by default ────────── */
+    #step-2, #step-3 { display: none; }
+
+    /* ─── Card slots ───────────────────────────── */
+    .card-slots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      justify-content: center;
+    }
+
+    .card-slot {
+      flex: 1 1 200px;
+      max-width: 260px;
+      position: relative;
+    }
+
+    .slot-label {
+      font-family: 'Cinzel', serif;
+      font-size: .68rem;
+      color: var(--gold-dim);
+      text-align: center;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      margin-bottom: .55rem;
+    }
+
+    /* Visual placeholder card */
+    .card-face {
+      height: 150px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .8rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color .4s, box-shadow .4s;
+    }
+    .card-face::before {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(201,168,76,.1);
+      transition: border-color .4s;
+    }
+    .card-face.filled {
+      border-color: var(--gold);
+      box-shadow: 0 0 22px rgba(201,168,76,.18);
+    }
+    .card-face.filled::before { border-color: rgba(201,168,76,.2); }
+
+    .card-face-icon {
+      font-size: 2.2rem;
+      opacity: .18;
+      transition: opacity .4s;
+      position: absolute;
+    }
+    .card-face.filled .card-face-icon { opacity: 0; }
+
+    .card-face-name {
+      position: absolute;
+      font-family: 'Cinzel', serif;
+      font-size: .78rem;
+      color: var(--gold-light);
+      text-align: center;
+      padding: 0 .8rem;
+      opacity: 0;
+      transition: opacity .4s;
+      line-height: 1.4;
+    }
+    .card-face.filled .card-face-name { opacity: 1; }
+
+    /* ─── Autocomplete ─────────────────────────── */
+    .ac-wrap { position: relative; }
+
+    .card-input {
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'IM Fell English', serif;
+      font-size: .92rem;
+      padding: .75rem 1rem;
+      outline: none;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .card-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 18px rgba(201,168,76,.1);
+    }
+    .card-input.filled { border-color: var(--gold); color: var(--gold-light); }
+
+    .ac-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #181530;
+      border: 1px solid var(--border);
+      border-top: none;
+      z-index: 200;
+      max-height: 240px;
+      overflow-y: auto;
+      display: none;
+    }
+    .ac-list::-webkit-scrollbar { width: 4px; }
+    .ac-list::-webkit-scrollbar-thumb { background: var(--gold-dim); }
+
+    .ac-item {
+      padding: .55rem 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(201,168,76,.04);
+      transition: background .15s;
+    }
+    .ac-item:hover, .ac-item.hi { background: rgba(201,168,76,.09); }
+    .ac-item-name { color: var(--text); font-size: .88rem; }
+    .ac-item-type { color: var(--text-dim); font-size: .72rem; font-style: italic; }
+
+    /* ─── Actions ──────────────────────────────── */
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    button { cursor: pointer; }
+
+    .btn-reveal {
+      font-family: 'Cinzel', serif;
+      font-size: .88rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      padding: 1rem 2.8rem;
+      border: 1px solid var(--gold);
+      background: linear-gradient(135deg, rgba(92,32,128,.4), rgba(40,20,80,.7));
+      color: var(--gold-light);
+      transition: all .35s;
+    }
+    .btn-reveal:hover:not(:disabled) {
+      background: linear-gradient(135deg, rgba(92,32,128,.7), rgba(60,30,110,.9));
+      box-shadow: 0 0 30px rgba(201,168,76,.28);
+    }
+    .btn-reveal:disabled { opacity: .35; cursor: not-allowed; }
+
+    .btn-sec {
+      font-family: 'Cinzel', serif;
+      font-size: .82rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 1rem 1.8rem;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-dim);
+      transition: all .3s;
+    }
+    .btn-sec:hover { border-color: var(--text-dim); color: var(--text); }
+
+    /* ─── Meaning cards ────────────────────────── */
+    #meanings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+      gap: 2rem;
+    }
+
+    .m-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.8rem 2rem;
+      position: relative;
+      animation: fadeUp .55s ease both;
+    }
+    .m-card::before {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(201,168,76,.07);
+      pointer-events: none;
+    }
+    .m-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      opacity: .6;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .m-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding-bottom: 1.1rem;
+      margin-bottom: 1.3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .m-numero {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: var(--gold-dim);
+      min-width: 2.8rem;
+      padding-top: .15rem;
+    }
+    .m-title { flex: 1; }
+    .m-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      color: var(--gold-light);
+      margin-bottom: .45rem;
+      line-height: 1.2;
+    }
+    .m-badges { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+    .badge {
+      font-family: 'Cinzel', serif;
+      font-size: .62rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .18rem .55rem;
+      border: 1px solid;
+    }
+    .badge-pos  { border-color: rgba(201,168,76,.35); color: var(--gold);          background: rgba(201,168,76,.05); }
+    .badge-el   { border-color: rgba(92,32,128,.5);  color: var(--purple-light);   background: rgba(92,32,128,.1);  }
+    .badge-type { border-color: var(--border);       color: var(--text-dim); }
+
+    .m-section { margin-bottom: 1.1rem; }
+
+    .m-label {
+      font-family: 'Cinzel', serif;
+      font-size: .66rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: .45rem;
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+    }
+    .m-label::after { content: ''; flex: 1; height: 1px; }
+
+    .lbl-sim  { color: var(--text-dim); }
+    .lbl-sim::after  { background: rgba(150,130,100,.18); }
+    .lbl-pos  { color: var(--pos-text); }
+    .lbl-pos::after  { background: rgba(45,107,63,.28); }
+    .lbl-neg  { color: var(--neg-text); }
+    .lbl-neg::after  { background: rgba(107,45,45,.28); }
+    .lbl-ex   { color: var(--purple-light); }
+    .lbl-ex::after   { background: rgba(92,32,128,.2); }
+
+    .m-text {
+      font-style: italic;
+      line-height: 1.75;
+      font-size: .93rem;
+    }
+    .txt-sim { color: var(--text-dim); }
+    .txt-pos {
+      color: var(--pos-text);
+      background: rgba(30,92,46,.07);
+      border-left: 2px solid var(--pos);
+      padding: .4rem .8rem;
+    }
+    .txt-neg {
+      color: var(--neg-text);
+      background: rgba(92,30,30,.07);
+      border-left: 2px solid var(--neg);
+      padding: .4rem .8rem;
+    }
+    .txt-ex  { color: var(--purple-light); }
+
+    /* ─── Spread legend ────────────────────────── */
+    .spread-legend {
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      font-size: .72rem;
+      color: var(--text-dim);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    /* ─── Loading ──────────────────────────────── */
+    #loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      letter-spacing: .2em;
+      font-size: .9rem;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 2px solid rgba(201,168,76,.2);
+      border-top-color: var(--gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ─── Error ────────────────────────────────── */
+    #error-msg {
+      display: none;
+      text-align: center;
+      padding: 4rem 2rem;
+      font-family: 'Cinzel', serif;
+    }
+    #error-msg h2 { color: var(--gold); margin-bottom: 1rem; }
+    #error-msg p  { color: var(--text-dim); line-height: 1.8; }
+    #error-msg code {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: .25rem .6rem;
+      font-family: monospace;
+      color: var(--gold-light);
+    }
+
+    /* ─── Footer ───────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 2.5rem 0 1.5rem;
+      color: var(--text-dim);
+      font-size: .85rem;
+      font-style: italic;
+      border-top: 1px solid var(--border);
+      margin-top: 4rem;
+      letter-spacing: .05em;
+    }
+
+    /* ─── Responsive ───────────────────────────── */
+    @media (max-width: 640px) {
+      .card-slot { max-width: 100%; }
+      h1 { font-size: 2.6rem; }
+      .btn-count { min-width: 120px; padding: 1rem 1.4rem; }
+      #meanings-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="stars"></div>
+
+<div class="container">
+  <header>
+    <div class="header-ornament">
+      <div class="orn-line"></div>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <polygon points="16,2 19.5,12 30,12 21.5,18.5 24.5,29 16,22.5 7.5,29 10.5,18.5 2,12 12.5,12"
+          fill="none" stroke="#c9a84c" stroke-width="1" opacity=".8"/>
+      </svg>
+      <div class="orn-line r"></div>
+    </div>
+    <h1>Tarot</h1>
+    <p class="subtitle">Consulte as cartas e descubra as mensagens do universo</p>
+  </header>
+
+  <div id="loading">
+    <div class="spinner"></div>
+    <span>Carregando o baralho...</span>
+  </div>
+
+  <div id="error-msg">
+    <h2>Não foi possível carregar os dados</h2>
+    <p>
+      Para usar este site, sirva os arquivos em um servidor local.<br><br>
+      Com Python: <code>python -m http.server 8080</code><br>
+      Depois acesse <code>http://localhost:8080</code><br><br>
+      Ou use a extensão <strong>Live Server</strong> no VS Code.
+    </p>
+  </div>
+
+  <div id="app" style="display:none">
+    <!-- Step 1 -->
+    <section id="step-1">
+      <h2 class="section-title">Quantas cartas deseja consultar?</h2>
+      <div class="count-buttons">
+        <button class="btn-count" onclick="selectCount(this,1)">
+          <span class="btn-count-n">1</span>
+          <span class="btn-count-l">Carta Única</span>
+        </button>
+        <button class="btn-count" onclick="selectCount(this,3)">
+          <span class="btn-count-n">3</span>
+          <span class="btn-count-l">Passado · Presente · Futuro</span>
+        </button>
+        <button class="btn-count" onclick="selectCount(this,5)">
+          <span class="btn-count-n">5</span>
+          <span class="btn-count-l">Cruz Celta</span>
+        </button>
+        <button class="btn-count" onclick="selectCount(this,7)">
+          <span class="btn-count-n">7</span>
+          <span class="btn-count-l">Ferradura</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section id="step-2">
+      <h2 class="section-title">Escolha as Cartas</h2>
+      <div class="card-slots" id="card-slots"></div>
+      <div class="actions">
+        <button class="btn-reveal" id="btn-reveal" disabled onclick="revealCards()">✦ Revelar Leitura</button>
+        <button class="btn-sec" onclick="clearSlots()">Limpar Cartas</button>
+        <button class="btn-sec" onclick="resetAll()">Nova Leitura</button>
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section id="step-3">
+      <h2 class="section-title">A Leitura</h2>
+      <div class="spread-legend" id="spread-legend"></div>
+      <div id="meanings-grid"></div>
+      <div class="actions">
+        <button class="btn-sec" onclick="backToSelect()">← Alterar Cartas</button>
+        <button class="btn-sec" onclick="resetAll()">Nova Leitura</button>
+      </div>
+    </section>
+  </div>
+
+  <footer>✦ As cartas revelam caminhos — a escolha sempre é sua ✦</footer>
+</div>
+
+<script>
+/* ── State ─────────────────────────────────── */
+let data        = null;
+let allCards    = [];
+let cardCount   = 0;
+let selected    = [];
+let highlighted = [];
+
+const SPREADS = {
+  1: ['A Mensagem'],
+  3: ['Passado', 'Presente', 'Futuro'],
+  5: ['Situação', 'Desafio', 'Passado Recente', 'Futuro Próximo', 'Resultado'],
+  7: ['Você', 'Presente', 'Esperanças', 'Passado Recente', 'Futuro Próximo', 'Forças Externas', 'Resultado Final'],
+};
+
+/* ── Stars ──────────────────────────────────── */
+(function buildStars() {
+  const c = document.getElementById('stars');
+  let html = '';
+  for (let i = 0; i < 220; i++) {
+    const sz  = Math.random() < .65 ? 1 : Math.random() < .7 ? 1.5 : 2;
+    const x   = (Math.random() * 100).toFixed(2);
+    const y   = (Math.random() * 100).toFixed(2);
+    const op  = (.3 + Math.random() * .7).toFixed(2);
+    const dur = (2 + Math.random() * 4).toFixed(1);
+    const del = (Math.random() * 6).toFixed(1);
+    html += `<div style="position:absolute;left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;
+      border-radius:50%;background:#fff;opacity:${op};
+      animation:twinkle ${dur}s ${del}s infinite alternate"></div>`;
+  }
+  c.innerHTML = html;
+  const s = document.createElement('style');
+  s.textContent = '@keyframes twinkle{from{opacity:.15}to{opacity:1}}';
+  document.head.appendChild(s);
+})();
+
+/* ── Load data ──────────────────────────────── */
+async function init() {
+  try {
+    const r = await fetch('tarot.json');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    data = await r.json();
+    buildIndex();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('app').style.display     = 'block';
+  } catch(e) {
+    document.getElementById('loading').style.display   = 'none';
+    document.getElementById('error-msg').style.display = 'block';
+  }
+}
+
+function buildIndex() {
+  allCards = [];
+  data.arcanos_maiores.forEach(c => {
+    allCards.push({ nome: c.nome, tipo: 'Arcano Maior', cat: 'maior', data: c });
+  });
+  Object.entries(data.arcanos_menores).forEach(([key, naipe]) => {
+    naipe.cartas.forEach(c => {
+      allCards.push({ nome: c.nome, tipo: naipe.nome, cat: 'menor', naipe: key, data: c });
+    });
+  });
+}
+
+/* ── Normalize for search ───────────────────── */
+function norm(s) {
+  return s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim();
+}
+
+function search(q) {
+  if (!q) return [];
+  const nq = norm(q);
+  return allCards.filter(c => norm(c.nome).includes(nq)).slice(0, 10);
+}
+
+/* ── UI: select count ───────────────────────── */
+function selectCount(btn, n) {
+  cardCount = n;
+  selected  = new Array(n).fill(null);
+  highlighted = new Array(n).fill(-1);
+
+  document.querySelectorAll('.btn-count').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const s2 = document.getElementById('step-2');
+  s2.style.display = 'block';
+  buildSlots();
+  setTimeout(() => s2.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
+}
+
+/* ── Build input slots ──────────────────────── */
+function buildSlots() {
+  const labels = SPREADS[cardCount];
+  const wrap   = document.getElementById('card-slots');
+  wrap.innerHTML = '';
+
+  for (let i = 0; i < cardCount; i++) {
+    const div = document.createElement('div');
+    div.className = 'card-slot';
+    div.innerHTML = `
+      <div class="slot-label">${labels[i]}</div>
+      <div class="card-face" id="face-${i}">
+        <span class="card-face-icon">✦</span>
+        <span class="card-face-name" id="face-name-${i}"></span>
+      </div>
+      <div class="ac-wrap">
+        <input type="text" id="inp-${i}" class="card-input"
+          placeholder="Digite o nome da carta…"
+          autocomplete="off"
+          oninput="onInput(event,${i})"
+          onkeydown="onKeydown(event,${i})"
+          onfocus="onFocus(${i})"
+          onblur="onBlur(${i})">
+        <div class="ac-list" id="ac-${i}"></div>
+      </div>`;
+    wrap.appendChild(div);
+  }
+  updateReveal();
+}
+
+/* ── Autocomplete events ────────────────────── */
+function onFocus(i) {
+  const inp = document.getElementById(`inp-${i}`);
+  renderList(i, search(inp.value));
+}
+
+function onInput(e, i) {
+  if (selected[i]) {
+    selected[i] = null;
+    document.getElementById(`inp-${i}`).classList.remove('filled');
+    document.getElementById(`face-${i}`).classList.remove('filled');
+    document.getElementById(`face-name-${i}`).textContent = '';
+    updateReveal();
+  }
+  renderList(i, search(e.target.value));
+}
+
+function onKeydown(e, i) {
+  const list = document.getElementById(`ac-${i}`);
+  if (list.style.display === 'none') return;
+  const items = list.querySelectorAll('.ac-item');
+  const cur   = highlighted[i];
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    setHi(i, Math.min(cur + 1, items.length - 1));
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    setHi(i, Math.max(cur - 1, 0));
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (cur >= 0 && list._results) pick(i, list._results[cur]);
+  } else if (e.key === 'Escape') {
+    list.style.display = 'none';
+  }
+}
+
+function onBlur(i) {
+  setTimeout(() => {
+    const l = document.getElementById(`ac-${i}`);
+    if (l) l.style.display = 'none';
+  }, 200);
+}
+
+function setHi(i, idx) {
+  highlighted[i] = idx;
+  document.getElementById(`ac-${i}`).querySelectorAll('.ac-item').forEach((el, j) => {
+    el.classList.toggle('hi', j === idx);
+  });
+}
+
+function renderList(i, results) {
+  const list = document.getElementById(`ac-${i}`);
+  if (!results.length) { list.style.display = 'none'; return; }
+  list._results = results;
+  highlighted[i] = -1;
+  list.innerHTML = results.map((c, j) => `
+    <div class="ac-item" data-j="${j}"
+      onmousedown="pickFromList(event,${i},${j})"
+      onmouseenter="setHi(${i},${j})">
+      <div class="ac-item-name">${c.nome}</div>
+      <div class="ac-item-type">${c.tipo}</div>
+    </div>`).join('');
+  list.style.display = 'block';
+}
+
+function pickFromList(e, i, j) {
+  e.preventDefault();
+  const list = document.getElementById(`ac-${i}`);
+  if (list._results) pick(i, list._results[j]);
+}
+
+function pick(i, card) {
+  selected[i] = card;
+  const inp  = document.getElementById(`inp-${i}`);
+  inp.value  = card.nome;
+  inp.classList.add('filled');
+  document.getElementById(`face-${i}`).classList.add('filled');
+  document.getElementById(`face-name-${i}`).textContent = card.nome;
+  document.getElementById(`ac-${i}`).style.display = 'none';
+  updateReveal();
+}
+
+function updateReveal() {
+  const all = selected.slice(0, cardCount).every(c => c !== null);
+  document.getElementById('btn-reveal').disabled = !all;
+}
+
+/* ── Reveal ─────────────────────────────────── */
+function revealCards() {
+  const labels = SPREADS[cardCount];
+  const grid   = document.getElementById('meanings-grid');
+  grid.innerHTML = '';
+
+  document.getElementById('spread-legend').textContent =
+    labels.join('  ·  ');
+
+  selected.slice(0, cardCount).forEach((card, i) => {
+    const el = buildMeaning(card, labels[i], i);
+    grid.appendChild(el);
+  });
+
+  const s3 = document.getElementById('step-3');
+  s3.style.display = 'block';
+  setTimeout(() => s3.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
+}
+
+/* ── Build meaning card ─────────────────────── */
+function buildMeaning(card, posLabel, idx) {
+  const d   = card.data;
+  const div = document.createElement('div');
+  div.className = 'meaning-card m-card';
+  div.style.animationDelay = (idx * .14) + 's';
+
+  const numero   = d.numero !== undefined ? d.numero : (d.cargo || '');
+  const elemento = d.elemento || d.elemento_naipe || '';
+
+  /* header */
+  let html = `
+    <div class="m-header">
+      <div class="m-numero">${numero}</div>
+      <div class="m-title">
+        <div class="m-name">${d.nome}</div>
+        <div class="m-badges">
+          ${posLabel ? `<span class="badge badge-pos">${posLabel}</span>` : ''}
+          <span class="badge badge-type">${card.tipo}</span>
+          ${elemento ? `<span class="badge badge-el">${cap(elemento)}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+
+  /* sections */
+  if (d.simbologia) html += section('lbl-sim','Simbologia','txt-sim', d.simbologia);
+  if (d.positivo)   html += section('lbl-pos','✦ Positivo','txt-pos', d.positivo);
+  if (d.negativo)   html += section('lbl-neg','✦ Desafio / Sombra','txt-neg', d.negativo);
+
+  if (d.busca_elemento) {
+    Object.entries(d.busca_elemento).forEach(([el, txt]) => {
+      html += section('lbl-ex', `Busca — ${cap(el)}`, 'txt-ex', txt);
+    });
+  }
+
+  if (d.significado_numero)
+    html += section('lbl-ex','Significado do Número','txt-ex', d.significado_numero);
+
+  if (d.tipo === 'corte') {
+    const elC = d.elemento_cargo ? `Elemento do cargo: ${cap(d.elemento_cargo)}` : '';
+    const pol = d.descricao_polaridade ? `Polaridade: ${d.descricao_polaridade}` : '';
+    const extra = [elC, pol].filter(Boolean).join(' · ');
+    if (extra) html += section('lbl-ex','Cargo & Polaridade','txt-ex', extra);
+  }
+
+  div.innerHTML = html;
+  return div;
+}
+
+function section(lblCls, title, txtCls, text) {
+  return `
+    <div class="m-section">
+      <div class="m-label ${lblCls}">${title}</div>
+      <p class="m-text ${txtCls}">${text}</p>
+    </div>`;
+}
+
+function cap(s) {
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+}
+
+/* ── Controls ───────────────────────────────── */
+function clearSlots() {
+  selected = new Array(cardCount).fill(null);
+  buildSlots();
+  document.getElementById('step-3').style.display = 'none';
+}
+
+function backToSelect() {
+  document.getElementById('step-3').style.display = 'none';
+  document.getElementById('step-2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetAll() {
+  cardCount = 0;
+  selected  = [];
+  document.getElementById('step-2').style.display = 'none';
+  document.getElementById('step-3').style.display = 'none';
+  document.getElementById('card-slots').innerHTML  = '';
+  document.getElementById('meanings-grid').innerHTML = '';
+  document.querySelectorAll('.btn-count').forEach(b => b.classList.remove('active'));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ── Boot ───────────────────────────────────── */
+init();
+</script>
+</body>
+</html>
