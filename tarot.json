@@ -1,0 +1,983 @@
+{
+  "elementos": {
+    "ar": {
+      "nome": "Ar",
+      "descricao": "É o grande escudo do nosso planeta. Nos protege, nos dá vida, está em toda parte. Elemento masculino, ativo. É o mundo da troca.",
+      "polaridade": "masculina",
+      "dominio": "mental, lógico e objetivo.",
+      "cor": "amarelo",
+      "estacao": "outono",
+      "direcao": "leste",
+      "tempo": "presente, o agora",
+      "naipe": "espadas",
+      "positivo": [
+        "capacidade de pensar, elaborar, bons ventos, brisas."
+      ],
+      "negativo": [
+        "ventania, racionalidade sem medida."
+      ]
+    },
+    "água": {
+      "nome": "Água",
+      "descricao": "Só é possível vida em água. Constante modificação. Emoção, coração, intuição, sentir dentro. Fala conosco sem usar palavras. Imaginação fértil demais, medos, fantasias, paranoias, pesadelos. Mostra a força do nosso coração.",
+      "polaridade": "feminina",
+      "dominio": "emocional, intuitivo",
+      "cor": "azul",
+      "estacao": "inverno",
+      "direcao": "sul",
+      "tempo": "passado",
+      "naipe": "copas",
+      "positivo": [
+        "bons sentimentos, boas lembranças, o que temos de bom, nossa intuição, devoção, fé, amor, altruísmo."
+      ],
+      "negativo": [
+        "tsunami, água parada, mágoas, rancor, ódio, memória boa para coisas ruins. Coisas gravemente guardadas no coração."
+      ]
+    },
+    "fogo": {
+      "nome": "Fogo",
+      "descricao": "Vida e luz. Erótico e sedutor. Calor na medida correta. Energia, coragem, bravura, impulso, vontade imposta, valentia. Todas as energias que temos.",
+      "polaridade": "masculino",
+      "dominio": "energético",
+      "cor": "vermelho",
+      "estacao": "primavera",
+      "direcao": "oeste",
+      "tempo": "aqui e agora",
+      "naipe": "paus",
+      "positivo": [
+        "coragem, bravura, energia, disposição física, desejo, tesão, reprodução, muita energia, luz, calor, acolhimento."
+      ],
+      "negativo": [
+        "luz que ofusca, violência, tirania, queimar tudo e não sobrar nada."
+      ]
+    },
+    "terra": {
+      "nome": "Terra",
+      "descricao": "Fertilidade, dar materialidade, aconchego, lar, firmeza e segurança. Fala sobre o futuro. Nossa casa, nosso lar. Porto seguro, nutrição, fartura, prosperidade, abundância. Condições, materialidade, conforto, ancestralidade, trabalho, futuro. Acumuladores. Preserva nossa memória.",
+      "polaridade": "feminina",
+      "dominio": "físico",
+      "cor": "verde, marrom e preto",
+      "estacao": "verão",
+      "direcao": "norte",
+      "tempo": "futuro",
+      "naipe": "ouros",
+      "positivo": [
+        "Fertilidade, riqueza, abundância, recursos a disposição."
+      ],
+      "negativo": [
+        "Estéril, sem função, tudo em excesso, acúmulo sem motivo, é só um peso."
+      ]
+    },
+    "espírito": {
+      "nome": "Espírito",
+      "descricao": "Mundo espiritual. Oculto. Tudo que ainda não descobrimos. Origem: onde tudo começou e onde tudo terminará.",
+      "polaridade": "não tem",
+      "dominio": "alma, espiritual",
+      "cor": "preta ou branca",
+      "estacao": "não tem",
+      "direcao": "não tem",
+      "tempo": "eternidade",
+      "naipe": "arcanos maiores",
+      "positivo": [
+        "sabe que existe uma dimensão espiritual em você, o mundo espiritual está ao nosso redor."
+      ],
+      "negativo": [
+        "inconsciência, não saber sua essência, sua verdade mais profunda."
+      ]
+    }
+  },
+  "numeros_arcanos_menores": {
+    "1": "Masculino. Princípio",
+    "2": "Feminino. Oposição ao 1. Sentir.",
+    "3": "Criatividade. Alegria. Junção do 1 e 2.",
+    "4": "Estabilidade. Ordem. Limites.",
+    "5": "Tentativa. Arriscar. Fora do limite. Problema.",
+    "6": "Reajuste. Reparação. Família.",
+    "7": "Vontade. Espiritualidade. Persistência. Acreditar. Fazer mais.",
+    "8": "Produtividade. Prosperidade. Saber usar seus talentos.",
+    "9": "Experiência. Maturidade. Trabalho Social. Ajudar os outros.",
+    "10": "Realização. Dignidade. Experiência."
+  },
+  "arcanos_maiores": [
+    {
+      "numero": "0",
+      "nome": "O Louco",
+      "simbologia": "audacioso, descuidado, displicente, alienação dos perigos, não está conectado com o que acontece ao seu redor. Trouxinha: traz coisas de origem divina, mas ignora.A flor e o cachorro representam o reino animal e vegetal, estão ao seu lado, mas o Louco não os vê. Montanha com gelos nas pontas: local alto e perigoso. O abismo é um convite para o improvável e desconhecido. A roupa é nobre, não tem elegância, mas tem leveza. Guirlanda de Louros: não percebe mas também é uma obra do divino. Pena vermelha: símbolo de vitalidade, está para trás, é vivo mas não percebe a grandeza disso.",
+      "positivo": "está feliz mesmo diante dos problemas e dos perigos. Encara tudo com leveza e inocência. Vê o melhor no pior. Aprende com a jornada. Vive o aqui e o agora. Conselhos de leveza, ver a vida com melhores olhos, não se preocupe tanto, não precisa ser tão ansioso, aproveite. Está diante de uma grande aventura. Viver a experiência. Encontrar alegria na tristeza.",
+      "negativo": "inconsequente, alienado. Não percebe o que está acontecendo. Falsas alegrias, falso senso de “está tudo bem”. Paranoias. Segurança onde não tem. Completamente perdido. Não sabe o que fazer nem para onde ir. Ingenuidade boba, é feita de trouxa. Sem referência sob si mesmo, não sabe quem é. Caminhar sem destino",
+      "elemento": "espírito",
+      "busca_elemento": {
+        "espírito": "simples e ignorante. Sem essência. Cheio de potencial."
+      }
+    },
+    {
+      "numero": "I",
+      "nome": "O Mago",
+      "simbologia": "Símbolo do infinito na cabeça: grande capacidade de pensar. Homem jovem, imaturo. 4 elementos à sua frente e o próprio mago é o 5 elemento: quando puser seu espírito nas coisas poderá realizar tudo o que quiser. Vermelho: sangue, morte. Branco: leite, vida",
+      "positivo": "Poder de iniciativa por ser o número 1. Resolver as coisas depende da nossa pró atividade e das boas ideias. Estudar seus recursos. Usar a criatividade. Inteligência e capacidade de se movimentar. Pode encontrar a solução de forma inesperada. Empolgação, ansiar pela vitória",
+      "negativo": "Todas as ideias possíveis, mas não tem ação ou não pensa em nada. Não pensa no tempo, imaturo, superficial. Sem criatividade. Não faz bom uso dos seus recursos. Totalmente despreparado. Procrastina, hesita. Quer tudo pra ontem, não sabe aprender.",
+      "elemento": "ar",
+      "busca_elemento": {
+        "ar": "busca se conectar com as pessoas pela fala, pelas suas ideias. Vontade de se impor. Deseja ser visto, ouvido e ter a atenção das pessoas."
+      }
+    },
+    {
+      "numero": "II",
+      "nome": "A Sacerdotisa",
+      "simbologia": "Tora enrolada: cobre todo o seu conhecimento. Colunas do Templo de Salomão: clara é a benção, beleza, misericórdia e escura é severidade e correção. Seu pé pisa na lua crescente e as 3 fases da lua na cabeça: o mundo e o ciclo feminino. Grande força do feminino: sentir, sexto sentido, intuição. Roupa azul: a sua força vem das emoções, sentir, intuição. Lago: o mundo introvertido, oculto.",
+      "positivo": "Pensar com a alma e sentir com o coração. Perceber o que não está dito ou explícito. Nem tudo precisa ser revelado, podemos deixar velado, guardado, protegido. Nos inspira a pensar, refletir, reorganizar nosso mundo interior. Entender se devemos agir ou esperar. Parar e sentir, perceber o mundo ao redor, acalmar suas emoções para que você possa ouvir sua consciência. Se preserve para o momento certo. Ama com muita profundidade, não expressa com palavras, mas revela com o coração, guarda tudo para o momento certo. Ama com muita intensidade",
+      "negativo": "Guarda tudo para si até ficar tomada pela mágoa. Por fora está bem, mas por dentro se sente reprimida. Frigidez, cinismo, falsidade (mostra uma coisa, mas é outra), rancor, mágoa, isolamento social, ódio, muito sentimento guardado. Mulher de fases, inconstante. Problemas com os ciclos. Fria, sem capacidade de sentir.",
+      "elemento": "água",
+      "busca_elemento": {
+        "água": "vê você. Mesmo sem ver com os olhos, ela acredita, pois, vê com o coração. Devoção, entrega. Intuição, capta os sinais. Virtude."
+      }
+    },
+    {
+      "numero": "III",
+      "nome": "A Imperatriz",
+      "simbologia": "12 estrelas na coroa: ela fala com os Deuses, 1 estrela para cada signo, mãe de todos. Cetro: poder feminino. Escudo em forma de coração: o amor é a sua proteção máxima, o amor é a sua bandeira. Sentada de frente para um jardim: ela pode dar forma a tudo. Grande capacidade de amar e ser amado. Mulher madura. Movimentos mentais, intelectuais e sentimentais",
+      "positivo": "Força da mãe, condução perfeita, beleza, criatividade. Observa todos os recursos ao seu redor e faz bom uso. Administra tudo, dá forma ao reino. Faz tudo com amor, mas é firme quando precisa ser. Mulher bela, pessoas com alta estima, que administram bem seus recursos, inteligente, inventiva, criativa e produtiva, carisma, confiança. Amada por todos. Benção de Afrodite.",
+      "negativo": "Mulher poderosa com todos os recursos ao seu redor, mas incapaz de servir aos seus propósitos. Futilidade, tudo somente para si, nada constrói, nada cria. Estéril. Brilha, mas não tem função. Parece ser maravilhoso, mas é fake. Pessoa rasa, tem tudo mas sofre de fartura, procura pelo em ovo. Produz coisas desnecessárias, coisas se acumulando ao seu redor, sem uso. Usa uma coroa que não é dela. Tirana, impõem sua vontade. Não deixa os filhos crescerem, se não recebe amor usa chantagem emocional. Maternal hiperprotetor.",
+      "elemento": "fogo",
+      "busca_elemento": {
+        "fogo": "luz que vem do útero. As pessoas te ouvem. Criatividade. Vida. Encontrar a medida correra: brilhar sem queimar. Revela os justos."
+      }
+    },
+    {
+      "numero": "IV",
+      "nome": "O Imperador",
+      "simbologia": "Sentado no trono de ferro, coloca a semente para a Imperatriz colocar forma. Firme, forte, pronto para a guerra. Impõem a sua vontade. Homem maduro. Coroa com as 5 joias da humanidade, representando os grandes valores. Conquistou todos, alcança o impossível através de seus braços fortes. Cor vermelha: ação. 4 cabeças de áries: vontade de fazer e realizar tudo. Homem bravo, nobre e corajoso. Pai do mundo, sua responsabilidade é ampliar e proteger o reino",
+      "positivo": "Capacidade de dominar nossos passos, independência, disposição para enfrentar nossos desafios. Impulso de realizar as coisas, força de à luta e superar obstáculos. Enfrentar com bravura e coragem. Experiência e capacidade de liderar nossos passos nos deixa firmes. Força de ação e movimento. Não espera coisas fáceis, mas espera vitória. A capacidade de liderar a própria vida também é um momento de paz que deve ser conquistado",
+      "negativo": "Homem intransigente, tirano, super poder de domínio. Rei fraco e incompetente. O que nos impede é a falta de coragem, ação e impulso. Tirano: passa por cima de todos ou corta a sua própria vontade. Vontade que nunca é colocada em prática. Usa seu poder para violência. Procrastinação, homem frouxo, impotente.",
+      "elemento": "terra",
+      "busca_elemento": {
+        "terra": "capacidade de realização, rotina, vontade de conquistar. Busca posses, acumula, quer alcançar seu próprio tesouro."
+      }
+    },
+    {
+      "numero": "V",
+      "nome": "O Papa",
+      "simbologia": "Homem sábio, professor, tem a palavra como força. Todo de vermelho: grande capacidade de agir. Força da organização, regras e leis. 2 padres a sua frente que escutam e aprendem: devoção e obediência. Cedro com 3 níveis: mental, sentimental e espiritual. Mitra gloriosa: o mais alto poder na Terra, por isso sua palavra tem força e todos acreditam porque sua palavra é verdade",
+      "positivo": "Professa aquilo que acredita, fala dos grandes valores. Grande filósofo: pensa e entende a vida com espiritualidade. Convence pela lógica, tem devotos. Entende muito sobre um assunto, pessoas que ajudam outros a fazer grandes coisas. Pessoa que fala, acolhe, aconselha, mostra conhecimento. Em quem botamos voto de confiança. Ouvindo o Papa acharemos a solução, inspira nosso coração e nos faz querer ser melhor a cada dia.",
+      "negativo": "Inspira e influencia pela fé: fanatismo. Faz as pessoas perderem a razão e a lógica. Apresenta uma verdade enviesada. Palavra que não tem força, falso sábio. Se faz de Papa de algum assunto, mas é mentira. Hitler, Bolsonaro",
+      "elemento": "espírito",
+      "busca_elemento": {
+        "espírito": "fala sobre o espiritual, tenta ser melhor, aprendendo, buscando a verdade. Busca experiência, aprendizado. Sempre em busca se sua fé."
+      }
+    },
+    {
+      "numero": "VI",
+      "nome": "Os Enamorados",
+      "simbologia": "Escolher o que temos vontade. Árvore Sarça Ardente: libertação do povo judeu. Árvore do Jardim do Éden: a árvore do pecado. Uma é proibida e outro é sagrado. O caminho da perdição é doce e a outra é ardente e pega fogo: há portas estreitas e largas em nossa vida. Somos livres para escolher nosso caminho. Anjo cúpido vem perguntando: o que você quer agora? Sol: a verdadeira vontade, a verdadeira essência. Escolher com o coração. Montanha entre o casal: o caminho da dúvida não é um bom caminho, você precisa escolher",
+      "positivo": "A verdadeira força da escolha com o coração que é uma grande e potente forma de de resolver problemas. Temos escolhas, existem outras formas de fazer o que queremos. Escolha sem hesitar, se você escolher com o coração tudo dará certo. Olhar as possibilidades para que possa escolher. Amor amoroso, carnal, desejo. Querer estar junto, em contato com outras pessoas, escolhas entre duas pessoas. A jornada é tão importante quanto o destino",
+      "negativo": "Muitos caminhos, dúvidas, hesitar, não escolher. Muitas opções e nenhuma decisão. Muitas vezes não escutamos o coração, só a razão. Pessoas que escolheram porque tinham que escolher, porque era o dever e perderam a paixão, responsabilidades sem prazer. Dúvidas, falta de caminho, dualidade, uma hora quer uma coisa e outra hora quer outra. Antipatia pela vida, os amargos. Indiferença, não deseja nada, qualquer coisa serve. Falta de paixão, desejo",
+      "elemento": "ar",
+      "busca_elemento": {
+        "ar": "trocas, se conecta com outros, muda a sua opinião e seu ponto de vista conforme interage com o outro."
+      }
+    },
+    {
+      "numero": "VII",
+      "nome": "O Carro",
+      "simbologia": "Pegue a sua vontade e vá alcançar a sua vitória. Pomo dourado: é o seu desejo, a sua vontade. A esfinge da luz: razão. Esfinge negra: emoção. Manter emoção e razão em linha reta é a única forma de manter a carruagem andando, sem que ela se perca. Armadura com símbolos mágicos: carrega todo o conhecimento dos arcanos anteriores. Estrelas: não está perdido, se orienta pelas estrelas. Sabe para onde quer ir. Hora de procurar a jornada rumo à felicidade",
+      "positivo": "Nos leva a nossa jornada pessoal rumo à nossa realização. Acelerar, propósito, coragem, manter o emocional e a razão alinhados, equipado, orientado, vitória. Você só alcança algo quando deseja de verdade, não adianta querer pela metade. Luas: empatia. Não passa por cima de ninguém, acha um jeito de ser feliz",
+      "negativo": "Buscar as coisas com pouca vontade ou com tanta ansiedade que descarrilha a carruagem. Pessoas frias e calculistas que passam por cima dos outros. Viagens que não chegam ao destino, viagens com grandes problemas ou que demora para chegar ao destino. Perseguir objetivos que não são bons negócios. Fixados, viciados em um desejo e não aproveita a jornada. Desorientação, se você não sabe onde quer chegar qualquer lugar serve. Só sabe chegar porque alguém disse ou porque é da sua alma? Já decifrou esses sentimentos? E as suas intenções?",
+      "elemento": "água",
+      "busca_elemento": {
+        "água": "qual é o seu sonho? Persegue seu sonho. Acredita em si mesmo e se entrega à busca de seu sonho."
+      }
+    },
+    {
+      "numero": "VIII",
+      "nome": "A Justiça",
+      "simbologia": "Ordem, correção, ajustamento. Olha reto, segura uma espada em uma mão e uma balança na outra. Espada: está pronta para consagrar e condenar. Quem cumpriu as regras: honrarias. Quem não cumpriu: penas e castigos. Balança: está em perfeito equilíbrio entre razão e emoção. Todos são iguais, olha pra frente com razão. O que não está certo não passa, lei da causa e efeito",
+      "positivo": "Bons resultados, forças e proteções, está certo, é seu por direito. A balança está equilibrada para você, a espada te protege e te defende. Não esconda, seja justo e honesto, faça tudo certo. Forças jurídicas favoráveis. A espada fala de união: casamento, sociedade, contratos justos. Honra e nobreza. Se você fez a sua parte, confia. Quem não deve não teme.",
+      "negativo": "2 pesos, 2 medidas. Justiça quebrada, privilegia uns e prejudica outros. Serve só aos ricos. Quem tem mais fica com mais, quem tem menos fica com menos. Corrupção, não defende, não corrige. Omissão, justos que não fazem nada, lavam suas mãos. Em cima do muro, não coloca a sua verdade, não consegue ser justo. Conselho: ser imparcial, ouvir todos os lados. Indecisão, sem ação, apatia",
+      "elemento": "fogo",
+      "busca_elemento": {
+        "fogo": "busca o equilíbrio da sua energia"
+      }
+    },
+    {
+      "numero": "IX",
+      "nome": "O Eremita",
+      "simbologia": "Paciência. Seguir a jornada no seu próprio ritmo. Homem idoso: idade, tempo passando. Cajado: sua força e sabedoria. Lamparina: está buscando iluminação, a luz. O corpo é o final da vida, a lamparina é a alma, a vida eterna. Pensar na vida futura, pós morte. Entende que tudo o que aconteceu o levou para onde está agora. Fim de algo e aprendizado com esse fim.",
+      "positivo": "Homem sábio, paciente. Tem o que é necessário. Envelheceu bem: com saúde, firmeza, não é dependente, saudável. Velhice com isolamento natural para pensar em suas histórias. Tempo e razão: vai devagar que você vai sacar o que é para fazer: medite, reflita, estude. Mature o que você está vivendo, isso te dará a firmeza para conquistar seus objetivos. Decifrou a vida.",
+      "negativo": "Ficou velho e não amadureceu, não aprendeu nada com a vida. Moribundo. Bengala: não consegue andar direito. Caduco, doente, vive do passado, ranzinza. Pensa, mas não age. Conhecimento mofado. Não se cuida mais, avarento. Tudo o que ele tem é o passado.",
+      "elemento": "terra",
+      "busca_elemento": {
+        "terra": "tempo sobre a matéria. O tempo só melhora a terra."
+      }
+    },
+    {
+      "numero": "X",
+      "nome": "A Roda da Fortuna",
+      "simbologia": "Destino e sorte. A boa sorte é aleatória, vivemos altos e baixos. Quando ajeitamos uma coisa, outra desequilibra. Há dois eixos na roda: touro x escorpião: vida e morte / leão x aquário: eu e os outros. Mostra que a vida é cíclica e que devemos viver nosso ritmo interno, nossa saga pessoal rumo à felicidade. Diz que precisamos nos manter firme, no topo da roda sempre que possível. Deuses que ajudam e dificultam: forças do bem e do mal",
+      "positivo": "Boa sorte, bons momentos, reviravoltas inesperadas, sorte que chega e faz o jogo virar ao nosso favor. Manter as coisas no mesmo ritmo. Se tem dificuldade, mostra que bons momentos virão. Estude seus recursos, sua mente, energia. Decodifique os sinais, medite, use a sua sabedoria, olhe a roda inteira. Gira conforme as circunstâncias, mas podemos fazer com que ela chegue mais rápido ao topo. Faça uma estratégia, é sempre tempo de recomeçar. Tentar de novo, mude o que for necessário que vai dar certo",
+      "negativo": "Mudanças desfavoráveis, golpe de azar, situações inesperadas que dificultam as coisas, não está favorável. Falta a visão do todo. Momentos difíceis chegando, dificuldade, as coisas não estão no ciclo final. Se não olhar o todo não saberá o que deve ser arrumado. As questões são mais complexas do que você pensa, só está vendo um pedaço do problema",
+      "elemento": "espírito",
+      "busca_elemento": {
+        "espírito": "sempre pode recomeçar. Para alcançar a verdadeira sabedoria é necessário olhar a vida de vários ângulos. Entender que a vida é cíclica. Usar seu conhecimento para mudar sua sorte."
+      }
+    },
+    {
+      "numero": "XI",
+      "nome": "A Força",
+      "simbologia": "Superar as más tendências. Uma virgem segurando, sem força, a boca de um leão que também está tranquilo com a boca aberta. Símbolo do infinito: a importância da mente humana superar seus instintos. A bela e a fera. Masculino e feminino. A virgem: o signo de Virgem e o Leão, o signo de Leão. O equilíbrio perfeito entre os dois: libra e a sensualidade de escorpião. Um ser humano metade humano e metade cavalo: sagitário. Se você elevar a sua própria alma e se livrar da vida mundana você alcança um estado elevado de espírito",
+      "positivo": "Fala da vontade e coragem para transpor os obstáculos. Força moral, espiritual, dominar nós mesmos. Para domar nossos próprios instintos é necessário muito aprendizado, autodescoberta. Grandeza dos propósitos e ideais. Importância de amar nossa parte inferior/espinhos. Não tente resolver tudo de uma vez, vá com calma, desenvolvendo a sua habilidade de lidar com as suas dificuldades. Se você se esforçar, vai dar certo. Desejos, instintos, todos eles se expressando. Se esforçar, não desistir, persistir, não forçar as coisas. Vontade de fazer as coisas sem forçar a barra, faz sua parte que todo o resto se encaixa.",
+      "negativo": "Força do instinto, da matéria, que são mais fortes que o intelecto, das emoções. Fala de um desejo desenfreado, perde a referência da nossa humanidade, perdemos a razão e a capacidade de pensar. Covardia, dominar o fraco com força desmedida. Violência, instinto, bateu levou. É importante usar nossa calma e força de vontade para dominar nossos instintos. Fúria, raiva e desejo sexual desenfreados. Não ouve a razão nem os seus valores.",
+      "elemento": "ar",
+      "busca_elemento": {
+        "ar": "o conhecimento liberta. Graças a instrução, trocas e aprendizados que evoluímos. O intelectual nos eleva. Brilhantismo."
+      }
+    },
+    {
+      "numero": "XII",
+      "nome": "O Enforcado",
+      "simbologia": "Espiritual. A força que alcançamos quando estamos no limite. Não precisa mais de força, mas sim de entendimento. Auréola: muito próximo dos anjos. Não há mais o que ser feito. Não se sente sufocado, o que está em cima e o que está embaixo tem o mesmo valor. Encontra nas oposições o amor universal. Amar a si mesmo como se é e se sacrificar para que os outros sejam quem são. Altruísmo e boa vontade. Não se desespera, para, respira fundo e medita.",
+      "positivo": "Beleza do sacrifício por um ideal. Verdadeiros heróis. Renunciam uma vida de conforto para viver uma vida de iluminação. Se anula para ajudar outros. Ligado ao signo de peixes. Pés na espiritualidade. Você não tem opção, mas se você se manter firme vai alcançar seu objetivo. Somos muito mais fortes do que imaginamos",
+      "negativo": "Sacrifício sem necessidade, apenas para mostrar para os outros, para ganhar recompensas. Não se mexe, está parado, perdido, sem referência, procurando pelo em ovo. Ligado apenas em coisas materiais. Não conhece suas próprias vontades. “Me coloco em situações de risco para que todos venham me salvar”. Carência, egoísmo. Em busca do amor dos outros.",
+      "elemento": "água",
+      "busca_elemento": {
+        "água": "posso não chegar lá, mas meu coração vai. Entende que obstáculos e limitações fazem parte da jornada. Se sacrifica pela sua verdade. Ser exemplo. Altruísmo, ser para o outro."
+      }
+    },
+    {
+      "numero": "XIII",
+      "nome": "A Morte",
+      "simbologia": "Representada por um esqueleto porque todos são iguais. A morte chega para todos. Força democrática. Chega no cavalo branco: nobreza. Tudo nasce e morre, faz parte do ciclo da vida. Cada um morre conforme viveu. Sol: a vida continua após a morte, não é o fim. Promessa de imortalidade. Temos tudo para ser feliz no tempo que temos",
+      "positivo": "Às vezes não queremos transformação, mas sim o fim. Fim de um relacionamento, saída de um emprego, acabou a doença. A força do XIII é o ponto final. Podemos pensar em um novo início. Morrer não é um problema. “Pega tudo e deixe para trás. Pode doer, mas precisa de um ponto final”",
+      "negativo": "O fim desfavorável. Está podre, fedendo, contaminado, precisa ser enterrado. Se afastar, não tem mais jeito. Está apodrecido e não é dado um fim. Não aceitar o fim de algo, insistir no que não tem mais jeito",
+      "elemento": "fogo",
+      "busca_elemento": {
+        "fogo": "transforma tudo em cinzas. Destruição, fim. Mudança profunda."
+      }
+    },
+    {
+      "numero": "XIV",
+      "nome": "A Temperança",
+      "simbologia": "Somos todos criados pelos deuses, somos feitos de estrela. O espírito saindo do corpo. O glifo do sol: consciência, sem matéria dá para entender melhor a sua realidade. Na roupa: toda alma pertence a Deus. Asas: força de elevação. Ao fundo: o seu caminho, se lembra de onde veio. Coroa: símbolo da realeza. Encontrar a receita certa e isso leva tempo e dedicação",
+      "positivo": "Salvações. Ajuda e forças estão a caminho. Amigos, proteções, ajuda de pessoas. “Você se salva dessa, mas procure ajuda”. Equilibra o que está acontecendo na vida, se não consegue decidir: para e pensa, deixa fluir e tomar forma. Somos mais do que imaginamos. Um novo olhar para a vida: espiritualizado, ver o que de fato importa, menos materialista. Está tudo equilibrado.",
+      "negativo": "Salvação que não chega. Não haverá outra oportunidade. Não dá pra salvar. Perdeu o equilíbrio, só resta desapegar, está muito apegado. Ajuda que mais atrapalha do que ajuda. Puro desequilíbrio, excesso ou escassez. Vida 100% material, distanciamento espiritual. Apatia, indiferença, não fede nem cheira",
+      "elemento": "terra",
+      "busca_elemento": {
+        "terra": "arte conquistada pelo tempo. Alcançou sua essência."
+      }
+    },
+    {
+      "numero": "XV",
+      "nome": "O Diabo",
+      "simbologia": "É a própria tentação. Homem e mulher nus, um segurando o fogo, outro segurando um cacho de uva: pequenos demônios. Uvas: símbolo dos prazeres e deleites, vícios. Fogo: desejo, vício. Corrente: você não tem mais escolhas, vício. É uma quimera: o diabo tem um pouco de tudo. Tudo tem um pouco dessa força. Muito desejo. Quer brilhar no mundo material. Quando você não pode mais dizer não a uma coisa, atenção, é um vicio.",
+      "positivo": "Grandes conquistas materiais. Prazeres, viagens. Desejos saciados. Romance: vai ser incrível, vai encaixar, desejo puro. Vontade de dominar saciada. Diabo não é feio. Sedução, encanto, magnetismo pessoal, pessoas magnéticas. “Faça a sua venda ser irresistível”. Amar e vivenciar nossos desejos. Viva sem magoar o outro.",
+      "negativo": "Cuidado com o que deseja, você pode se machucar. Atenção: perigo! Parece ser bom, mas é cilada. Cuidado com os desejos desenfreados. Prisões, vícios, lidar com pessoas perigosas. Cuidado com o que você anda comprando, pode perder tudo. Trocas injustas, um está ganhando muito e o outro está perdendo muito. Você não está seduzindo as pessoas.",
+      "elemento": "espírito",
+      "busca_elemento": {
+        "espírito": "dificuldade de se manter espiritual no mundo material. Deseja se elevar."
+      }
+    },
+    {
+      "numero": "XVI",
+      "nome": "A Torre",
+      "simbologia": "Desconstrução. Símbolo do que você mais deseja, mas não tem base forte para encarar os desafios. Torre alta, homem e mulher caindo, projetados pela força e violência do raio, uma coroa sendo removida da Torre. O raio decepa a Torre. Raio: força dos deuses dando a sentença. Explosão de forças contidas que de tão densas não produziam bom efeito. A Torre cair é a salvação, a Torre deve cair",
+      "positivo": "Deixa cair, deixa fluir, não tente controlar, deixar ir embora, desapegar. Junta os cacos e dá a volta por cima. Limpa o campo, abra espaço e faça uma nova obra. Se afastar para deixar ruir",
+      "negativo": "Tentar manter a Torre em pé quando a solução é deixar cair. Está dentro da Torre, mas não faz nada para sair desse cenário. Cabeça dura. Situação dramática, desastrosa, perigosa. Pessoas próximas também sofrendo as consequências. Desastres, problemas, dificuldades, vítimas. Se você ficar dentro da Torre caia junto com ela",
+      "elemento": "ar",
+      "busca_elemento": {
+        "ar": "quanto mais sabemos, mas humildes devemos ser. O conhecimento não deve ser colocado acima dos outros."
+      }
+    },
+    {
+      "numero": "XVII",
+      "nome": "A Estrela",
+      "simbologia": "Se libertar. Mulher: sensualidade da mulher. Virginal, mas madura. Todos são estrelas, inclusive a mulher. Ela busca a estrela no reflexo da água: é preciso tirar as ilusões, se limpar para ter os olhos lúcidos. Estrelas: vontade de Deus, amanhã, busca brilhar, mas busca no lugar errado. Se orientar. Purificação dos sentimentos. Terra: fertilidade, esperança",
+      "positivo": "Beleza, glória, sensualidade, buscar uma vocação/propósito, ter esperança. Há uma luz no fim do túnel. Buscar amigos, estrelas não brilham só. Pessoas que brilham, que inspiram. Purificação, busque novos ares. O brilho está em nós. Tire férias",
+      "negativo": "Desorientação, perdido, perdeu o brilho interior. Ilusão, te tira a verdade, brilho fake, vulgaridade. Pessoa narcisista. Não olha para o alto, nem para a espiritualidade. Quer ser quem não é, desencanto. Desilusão e decepção. Lamúrias sem fim.",
+      "elemento": "água",
+      "busca_elemento": {
+        "água": "os deuses estão ali para te levar aos seus sonhos. Esperança, desejo. Sonhos se tornam vontades."
+      }
+    },
+    {
+      "numero": "XVIII",
+      "nome": "A Lua",
+      "simbologia": "3 níveis: fosso: água e crustáceo. Campo guardado por feras e duas Torres. Lua eclipsada com um rosto dentro. Representação do útero, da vagina. Lua: grandes mistérios do mundo feminino, ciclos lunares, magia, das deusas. Reencarnação, magia da vida. Medo de chegar até a Lua, mas chegando lá pode reencarnar.",
+      "positivo": "Mulher deusa. Magia, colocar nossa vontade em exercício. Milagre, se você for corajoso se se superar, será vitorioso. Magia favorável. Força do amor. Nutrir e cuidar para que possa crescer. Ouça sua fé, ouça as mulheres. Mulheres unidas pelo seu amor em comum. Encarar e superar nossos medos. Grande mediunidade",
+      "negativo": "Muitos medos, dificuldade de enfrentar situações, horrores, pavores, paralização pelo medo. Está no escuro, perigo, desorientação, inconsciência total. É necessário autoconhecimento. Magias jogando contra. Inconstância, não sabe o que quer, desespero. Problemas espirituais, mediunidade perturbada. Questões hormonais. Problemas na gestação",
+      "elemento": "fogo",
+      "busca_elemento": {
+        "fogo": "energia para gerar vida. Fogo da fênix."
+      }
+    },
+    {
+      "numero": "XIX",
+      "nome": "O Sol",
+      "simbologia": "Brilho, luminosidade, claridade. Nascimento. Saber quem é. Semear constante. Símbolo de ejaculação. Bandeira vermelha: vida",
+      "positivo": "Ponha as sementes, darão boas energias. Brilho. Símbolo da vida, do recomeço, nasceu, tá pronto, tá vivo. Carta gloriosa. Nascimento, sucesso, êxito, vitória, glória. Para ser vitorioso precisa ser puro de coração. Cuidar, zelar. Vitória do trabalho, criança prodígio, gêmeos. Mostre-se para os outros: põem a cara no sol. Orgulho quem se é",
+      "negativo": "Egocentrismo, vaidade, arrogância, não tem mais espaço para ninguém. Insegurança, não sabe quem é, brilho falso, autoritarismo. Muita concentração de energia, nada pode ficar perto. Rei na barriga, não vê a realidade. Baixa vitalidade, energia e empolgação. Desanimo e preguiça. Apatia, solidão. Relação fraca consigo mesmo",
+      "elemento": "terra",
+      "busca_elemento": {
+        "terra": "somos herdeiros da terra. É sempre tempo de renascer. Busca realização constante."
+      }
+    },
+    {
+      "numero": "XX",
+      "nome": "O Julgamento",
+      "simbologia": "Despertar. Somos todos iguais, irmãos. Anjos com bandeira com a cruz vermelha: representam os 5 elementos. Pessoas despertando para suas realidades. Despertar para a verdadeira vida: com propósito. A vida é muito mais",
+      "positivo": "Salvação, despertar, ouvir sua vontade, o grande chamado. Ouvir os sinais da vida, pessoas inspiradas, que elevam as outras. Espiritual, ancestrais salvos. O resgate chega, se permitir ser salvo. Fale para ser ouvido, propague a sua mensagem",
+      "negativo": "Chamado que não é ouvido, não atendido. Espera por um chamado que não vem. Espíritos perdidos. Falsas verdades, falsos profetas. Não se questionar. Fanatismo que pode levar a loucura. Necessidade de se ligar a uma fé, espíritos obsessores. Fala mas não é ouvido, não percebe que precisa se calar para ouvir. Vive na ilusão, viver na superficialidade. Não quer sair da zona de conforto. Não quer assumir responsabilidade. Inútil, procrastinação",
+      "elemento": "espírito",
+      "busca_elemento": {
+        "espírito": "deixar o que é do material para trás. Levar consigo só o que aprendeu."
+      }
+    },
+    {
+      "numero": "XXI",
+      "nome": "O Mundo",
+      "simbologia": "Felicidade. Essa pessoa vive a felicidade plena, está bem consigo mesma. Independência. Os quatro elementos unidos pelo quinto elemento. Bastões: usa os recursos que tem, onde chega é benção. Amor é a resposta para felicidade",
+      "positivo": "Um grande sim. Força de realização, vitória, alegrias. Felicidade, completude. Mundo ou local melhor. Realidade melhor. Universo em harmonia. Abençoa o jogo. Nova vida, novo momento. Soluciona tudo: tudo estará no tempo e na hora certa, vai dar certo. Consciência, responsável. Seja feliz no processo, buscar fazer o certo",
+      "negativo": "A pessoa não se sente parte. A solução é mudar o mundo. Nem tudo precisa ser do nosso jeito, se adequar. Entender qual é o seu mundo. Fazer parte de um mundo que não te pertence, se perguntar onde está e se faz sentido para sua vida. Encontrar seu verdadeiro eu, a verdadeira felicidade",
+      "elemento": "todos",
+      "busca_elemento": {
+        "ar": "se modifica pela inteligência",
+        "água": "igualdade com espaço para todos brilharem.",
+        "fogo": "as energias podem ser transformadas, calor, vida. Busca brilhar.",
+        "terra": "o mundo inteiro pode ser melhorado através do trabalho. Fazer nosso mundo ser melhor.",
+        "espírito": "luz para si e para o universo. Ser para sempre anjo, virou estrela."
+      }
+    }
+  ],
+  "arcanos_menores": {
+    "espadas": {
+      "nome": "Espadas",
+      "elemento": "ar",
+      "cartas": [
+        {
+          "nome": "Ás de Espadas",
+          "numero": 1,
+          "tipo": "pip",
+          "simbologia": "acontecer, manifestar. Ideia que surge sem pensar duas vezes. Força ativa das ideias. Se impor. Quer colocar as ideias em prática logo. Coroa é a nobreza. Princípio e o pensamento.",
+          "positivo": "boas ideias, boas sugestões, ideias que chegam com bons propósitos, ideias nobres. Honra, nobreza, palavras, planos. Princípios de quem fala, ético. Pensamento positivo. Comunicação, conversa, diálogo. Busca ter razão, falar o que considera certo. Vontade de dizer ao outro que está disposto a se comunicar e ao embate. Mostrar seu posicionamento. Tudo o for dito deve ser dito com educação e de forma direta. Fazer tudo de maneira direta, objetiva e nobre.",
+          "negativo": "uma ideia que não chega, fogo de palha, ideia ruim. Falar sem pensar. Sem honra. Ideias e palavras mentirosas. Não colabora com a ordem. Ideias de ataque. Situações contra você. Quer ferir. Não pode ser levado em consideração. Maliciosa. Falta de educação. Fere com as palavras. Péssimas ideias ou sugestões. Não ter como se defender.",
+          "elemento": "ar",
+          "significado_numero": "Masculino. Princípio"
+        },
+        {
+          "nome": "II Espadas",
+          "numero": 2,
+          "tipo": "pip",
+          "simbologia": "ideias disputando, tomar partido. Ideias em conflito. Lua e água mostram que devemos manter nossa vontade para trás para tomar uma decisão racional. A mulher está vendada para ser imparcial. É necessário se posicionar.",
+          "positivo": "trégua, acordos, chegar a uma decisão/escolha. Escolhas mais racionais são mais certas. Importância da firmeza. O que você quer de verdade? (Parecida com Enamorados, precisa tomar uma decisão). Ser diplomático, encontrar um ponto em comum com outras pessoas. Duelo, combate saudável. Concorrência bem feita. Sentenças que trazem boas notícias. Decisões favoráveis.",
+          "negativo": "hesitar, duvidar, indecisão, muita emoção, não pensar claramente, imparcialidade para o mal. Omissão para decisões da vida. Abster-se da guerra quando deveria lutar. Conflito sem fim, sem honra, ameaças. Imposição de força e vontades. Rigidez. Sem consideração com os sentimentos (tanto os próprios quanto dos outros). É necessário ter empatia para decidir bem. Dilema, brigas, discussões, sem harmonia.",
+          "elemento": "ar",
+          "significado_numero": "Feminino. Oposição ao 1. Sentir."
+        },
+        {
+          "nome": "III Espadas",
+          "numero": 3,
+          "tipo": "pip",
+          "simbologia": "ideia que nasce das oposições. É a decisão, o resultado, ainda que doa é necessário chegar ao consenso.",
+          "positivo": "alívio depois de tomar uma decisão difícil. Esquecer privilégios e tomar decisões para o bem de todos. Vá direto ao ponto. Encontra o coração do problema. A verdade do seu coração e dos seus valores. Não abra mão da sua verdade. Firmeza. Lutar pela sua opinião.",
+          "negativo": "falta de iniciativa e empatia. Angústia, desespero, sofrimento. Agonia mental por não saber qual é o problema. Falta de criatividade e de ideias. Não chega a um consenso. Outros decidem por você. Machucado, ferido. Autossabotagem. Dor para tomar uma decisão. Baixa auto estima, pensamentos que limitam e que detonam sua auto estima e confiança em você mesmo.",
+          "elemento": "ar",
+          "significado_numero": "Criatividade. Alegria. Junção do 1 e 2."
+        },
+        {
+          "nome": "IV Espadas",
+          "numero": 4,
+          "tipo": "pip",
+          "simbologia": "silêncio, lugar silencioso. Se organizar e fazer uma estratégia. Se reestruturar.",
+          "positivo": "parar para pensar, repouso do guerreiro. Organizar a mente. Meditação. Momento de reflexão para encontrar ideias. Observar mais que falar. Se concentrar. Dormir bem para ter uma vida mental saudável.",
+          "negativo": "ar viciado, mesmas ideias, mais do mesmo. Limitação. Pensamentos parados, apatia, sem concentração, não consegue se ouvir, sono excessivo ou em falta. Não elabora pensamentos, dificuldade em se expressar. Indiferença. Pensa muito e não coloca nada em prática. Pessoas que fazem silêncio quando deveriam se impor, omissão. Não faz nada de novo e quer resultados mesmo assim.",
+          "elemento": "ar",
+          "significado_numero": "Estabilidade. Ordem. Limites."
+        },
+        {
+          "nome": "V Espadas",
+          "numero": 5,
+          "tipo": "pip",
+          "simbologia": "tentativa de fazer dar certo. Encontra pessoas com melhores ideias e acaba perdendo. Derrota. Tenta argumentar, mas o outro estava mais preparado. Investida sem base, sem o argumento perfeito. Olhando as perdas.",
+          "positivo": "perdeu a batalha, mas não a guerra. Superar a dificuldade, aceitar o problema. Abrir mão das ideias, elas não são as melhores. Pelo menos você tentou. Novos ventos virão. Revise e reveja seus argumentos, seus conceitos e pontos de vista. Aprender com a experiência: qual foi a dificuldade? Tentar fazer o melhor com o que você tem.",
+          "negativo": "tentativa despreparada. Tentar algo sem saber sobre o assunto. Perda, derrota, dificuldade. Pessoas que usam suas ideias e pensamentos. Virada desfavorável. Pessimismo. Começar a batalha já pensando que vai perder. Não acreditar, não ir além. Pensamentos que rebaixam a coragem e autoestima. Pessoas que desencorajam o outro e roubam as ideias. Fazer o pior com as palavras. Perdas até para quem ganha.",
+          "elemento": "ar",
+          "significado_numero": "Tentativa. Arriscar. Fora do limite. Problema."
+        },
+        {
+          "nome": "VI Espadas",
+          "numero": 6,
+          "tipo": "pip",
+          "simbologia": "reparação, conversar, tentar se reconciliar. Busca de novas referências, um porto seguro. Argumento, tentar encontrar um refúgio. Resgate da dúvida/problema. Observar pensamentos que dão base para seus argumentos. Rever seus pontos.",
+          "positivo": "tempo de reparar, refazer, procurar refúgio. Melhores marés, caminhos nunca percorridos, novos refúgios. Aprendizado, pessoas ajudando, pessoas que amparam e orientam, que nos fazem refletir. Reparar um erro. Se preservar. Não é a hora de atacar.",
+          "negativo": "sair de cena, se ocultar. Uma das partes não quer conversar. Fugir de si mesmo, dos pensamentos.  Ao invés de parar, insiste. Chutar cachorro morto. Se perder nos próprios pensamentos, não querer mudar, perder a oportunidade de reparação. Perder a ajuda, não querer abrir mão das suas ideias. Não entende o poder do argumento, da troca, de ouvir o outro. Dificulta para quem tenta ajudar. Insistir no erro.",
+          "elemento": "ar",
+          "significado_numero": "Reajuste. Reparação. Família."
+        },
+        {
+          "nome": "VII Espadas",
+          "numero": 7,
+          "tipo": "pip",
+          "simbologia": "persistência, fé, acreditar. Precisa ver para crer. Insistindo você alcança. Tirar os problemas, tirar o que não é útil. É possível sim encontrar a resposta. Persistir para encontrar a resposta. Persistir para encontrar a verdade. Lógica e razão.",
+          "positivo": "persistência, busca. Saber onde está o problema para descobrir a verdade. Ser esperto, tomar vantagem através de uma estratégia. Ser diplomático. Não revelar tudo, saber falar com educação e colocar o seu ponto. Insistir no seu ponto de vista, trocar informações. Ter paciência, tirar os excessos.",
+          "negativo": "persistir no erro. Longe de ser diplomático. Mentiras, evitar a verdade. Usa a esperteza para sair das situações, malandro. Vira tudo contra o outro, segundas intenções. Usa a razão e tira o sentido das coisas. Só acredita no que vê. Fere as pessoas, tenta agradar a todos e se prejudica. Ações que não condizem com a verdade.",
+          "elemento": "ar",
+          "significado_numero": "Vontade. Espiritualidade. Persistência. Acreditar. Fazer mais."
+        },
+        {
+          "nome": "VIII Espadas",
+          "numero": 8,
+          "tipo": "pip",
+          "simbologia": "produtividade, rotina. As coisas ganham volume. Ordem, múltiplas ideias, diferentes formas de ver o mundo. Vontade de ver o mundo e de permanecer com as próprias ideias. Momento de se colocar a prova para avaliação. Expor suas ideias.",
+          "positivo": "se sente pronto para encarar as ideias e opiniões e não se importa com que os outros pensam. Está pronto para ir à público. Sabe qual é a sua verdade. Busca de coragem interior. Mostra sua capacidade de resolver os desafios. Um grande teste. Encontrar respostas e caminhos. Vê o desafio e a solução. Se liberta das suas amarras. Você é capaz de superar esse obstáculo. Vencer seus próprios medos e alcançar grandes resultados.",
+          "negativo": "paralização pelo medo. Medo, inferioridade, limitações, crenças, falsas verdades. Impedidos pela verdade do outro. Diz não sempre, para si e para os outros. Se acorrenta. “Não posso. Não consigo”. Não fazer o que quer por causa dos outros. Não consegue encarar o público. Impotência, medo, estar atado.",
+          "elemento": "ar",
+          "significado_numero": "Produtividade. Prosperidade. Saber usar seus talentos."
+        },
+        {
+          "nome": "IX Espadas",
+          "numero": 9,
+          "tipo": "pip",
+          "simbologia": "maturidade, responsabilidade. Maturidade do pensamento. Muitos pensamentos ao mesmo tempo, reflexão profunda. Colcha com símbolos astrológicos mostra que a pessoa pode não ter a resposta, mas o céu sempre pode ajudar. Avaliação meticulosa.",
+          "positivo": "grande capacidade de encontrar respostas através da meditação. Como os filósofos dizem: penso, logo existo. Acorda cedo, tem o dia bem organizado na cabeça. Acorda cedo para pensar com profundidade, não toma decisões por impulso. Preocupação que faz sentido, está certo pensar muito sobre isso e buscar as respostas dentro de si. Sabedoria, tempo e experiência. Faça tudo com cautela, pense com cuidado. Maturidade.",
+          "negativo": "imaturidade, velho, quebrado. Pensamento velho. Perturbação profunda. Tudo corrompe seu pensamento. Mensagens que perturbam. Insônia, mente que não desliga. Tem muita preocupação. Angústia, aflição, agonia, medo, frieza. Sem tranquilidade, pessoa sem esperança. Dementadores (lembrar de Harry Potter). Experiência desperdiçada.",
+          "elemento": "ar",
+          "significado_numero": "Experiência. Maturidade. Trabalho Social. Ajudar os outros."
+        },
+        {
+          "nome": "X Espadas",
+          "numero": 10,
+          "tipo": "pip",
+          "simbologia": "maduro, forte. Matar ou morrer. Grande verdade: vou vencer? A verdade prevalece, mas a verdade de quem? O nascer do sol mostra que sempre haverá uma nova ideia, iniciando todo o ciclo lá no ás.",
+          "positivo": "triunfo. As ideias foram consagradas e as ideias opostas foram vencidas. Prevalecer seus pensamentos. Acabaram os problemas, vitória, dificuldade superada, conquista difícil, hora de descansar e ver tudo o que conquistou. Capacidade de resolver todas as questões. Encontrou as respostas e a força necessária para resolver o problema. Quando você se livra, fim da dor e da dúvida. Foi difícil, mas venceu e tudo valeu a pena.",
+          "negativo": "perda, derrota, ruina, fim, dificuldade, caminho sem saída ou fechado, sem razão, sem raciocínio, estupidez, pensamento que se impõem e mata os outros pensamentos. Sem honra, chega para derrubar. Comunicação que chega com o objetivo de dificultar para o outro. Medo que paralisa, sem atitude, sem esperança, sem coragem, sem resposta. Não consegue organizar a mente, exaustão total, ignorância, arrogância, baixa auto estima, dor imensa.",
+          "elemento": "ar",
+          "significado_numero": "Realização. Dignidade. Experiência."
+        },
+        {
+          "nome": "Valete de Espadas",
+          "cargo": "Valete",
+          "naipe": "espadas",
+          "tipo": "corte",
+          "simbologia": "elemento terra + espadas. Jovem de cabelos longos, é como se estivesse aprendendo a ser cavaleiro. Inteligente, nobre, falante, fala sem pensar, imaturo, ainda não sabe usar seus dons.",
+          "positivo": "pessoa inteligente, elegante, arrumado, meio mauricinho, criança prodígio, bom nos estudos, superficialidade da adolescência, se relaciona bem com as pessoas, tá sempre postando nas redes, falante, facilidade de encontrar pessoas que pensam como ele, muda de ideia toda hora, mensageiro. Boas ideias/notícias.",
+          "negativo": "fala o que pensa, acusa sem provas, respondão, fake News, traz fofocas, excesso de informação, fica sempre na superficial, imaturo, dificuldade em se expressar, fútil, vive de aparências, finge elegância. Não tem capacidade de organizar seus pensamentos, não se liga nos pensamentos, não se liga nas emoções, zero empatia.",
+          "elemento_cargo": "terra",
+          "elemento_naipe": "ar",
+          "polaridade": "-+",
+          "descricao_polaridade": "se expressa, devagar, simples, muito objetivo ou se perde no que fala"
+        },
+        {
+          "nome": "Cavaleiro de Espadas",
+          "cargo": "Cavaleiro",
+          "naipe": "espadas",
+          "tipo": "corte",
+          "simbologia": "fogo + ar. Deseja expandir suas ações, se relacionar. Movimento do ar para trocas com o outro. Está em busca de informação/conhecimento. Força do naipe de espadas. Também leva mensagens/conhecimento.",
+          "positivo": "busca sabedoria, conhecimento, estudos, se relacionar com pessoas. Movimento para locais distantes, movimento em busca de conhecimento, sua mensagem. Notícia que se espalha rápido. Acesso ao conhecimento (faculdade, pós, curso), expõem suas mensagens.",
+          "negativo": "espalhar mal conhecimento, fake News, fofocas, boatos. Não busca conhecimento ou busca conhecimento superficial. Movimento para encontrar informações, buscando algo contra ou uma informação preciosa para dificultar/separar/espalhar. Não se relaciona bem, conhecimento para poucos. Fala sem medir as palavras, se fala doutor em um assunto mas é mentira.",
+          "elemento_cargo": "fogo",
+          "elemento_naipe": "ar",
+          "polaridade": "++",
+          "descricao_polaridade": "ar quente, sai impondo sua vontade, não se importa com o outro"
+        },
+        {
+          "nome": "Rainha de Espadas",
+          "cargo": "Rainha",
+          "naipe": "espadas",
+          "tipo": "corte",
+          "simbologia": "água + ar. Ama o que conhece. Mulheres inteligentes, que colocam a serviço do povo o que sabe: professora, pesquisadora.. Fala com todos e sua mensagem chega para todos. Valente, nobre, justa. Se comunica amorosamente: luta pela igualdade, pelo bem... Culta. Japamala: comunicação com os deuses pedindo calmaria, equilíbrio nos pensamentos.",
+          "positivo": "justa, culta, fala de maneira correta, inteligente, professores, comunicadores, porta voz, diplomacia. Quer saber se o outro está bem, gosta de cia, grande conselheira, advogados, pessoas que falam bem e defendem o consulente. Juízes, pessoas da lei, mentores, favorece com boas referências. Defende boas causas, usa a tecnologia para alcançar mais pessoas.",
+          "negativo": "não considera as necessidades dos outros, durezas nas decisões, sem empatia, grande inimiga, quer que o outro lado perca, pessoas poderosas, alta sociedade, grande poder, grande influência. Parece justa, mas não é. Pessoa cruel. Tirando a oportunidade dos outros. Pode trapacear. Só tirar vantagens, espalhar fofocas, intrigas.",
+          "elemento_cargo": "água",
+          "elemento_naipe": "ar",
+          "polaridade": "-+",
+          "descricao_polaridade": "justa como o rei, mas tem mais coração, tem empatia"
+        },
+        {
+          "nome": "Rei de Espadas",
+          "cargo": "Rei",
+          "naipe": "espadas",
+          "tipo": "corte",
+          "simbologia": "ar + ar. Mente brilhante, a frente de seu tempo. Rei honra. Força da lógica. Inteligente, pesquisador. Se comunica. Pode ir longe, palavra firme, mas considera os outros. Poliglota.",
+          "positivo": "homem inteligente, bem educado, bem formado. Pensa a frente de seu tempo. Homem brilhante, justo, entende de leis, te envolve, elegante, falante, busca conhecimento. Professores, pessoas da lei, comunicadores, pesquisadores. Objetivo, claro, direto, comprometido com a verdade, tem networking. Encontra pessoas que podem ajudar, tem mensageiros. O que ele fala é lei, conselheiro, sábio. Tem compromisso no que diz.",
+          "negativo": "injustiça, maldade, intriga, estratégia para derrubar através da palavra. Quer a cabeça dos seus inimigos. Sem coração, frio, calculista. Aparenta ser elegante, bom de papo, mas é falso. Falsifica documentos, corrupto. Sem empatia. Não é carinhoso. Tem dificuldade em estar perto das pessoas. Só quer estar com quem pensa como ele.",
+          "elemento_cargo": "ar",
+          "elemento_naipe": "ar",
+          "polaridade": "++",
+          "descricao_polaridade": "não tem problemas em tomar decisões, racional, justo."
+        }
+      ]
+    },
+    "copas": {
+      "nome": "Copas",
+      "elemento": "água",
+      "cartas": [
+        {
+          "nome": "Ás de Copas",
+          "numero": 1,
+          "tipo": "pip",
+          "simbologia": "sentimento que brota. Acontece, quer expandir, quer existir. Taças são mais receptivas, passivas. Pomba branca: fé, acreditar. Tem como objetivo fluir.",
+          "positivo": "nascimento de bons sentimentos, energia gostosa de amor. É uma oferta, uma alegria. Quando você se encanta por algo. Algo ofertado, doado ao mundo. Saciar todas as sedes. Tirando os problemas do caminho, matando o desespero da sede. Tirando a secura. Benevolência, simpatia e empatia. Uma fé, uma centelha de caminho, brotar das emoções. Felicidade, princípio de uma lembrança, gratidão, presentes, gentileza.",
+          "negativo": "maus sentimentos: não gostei, não são profundos. Você se irrita, rejeita. Ofertas ou presentes não dados ou esquecidos. “Não lembrou de mim”. Esquecer ou mágoas sempre lembradas. Negatividade, tristeza, rancor, mágoa, ódio, culpa. Copo vazio, água podre, não mata a sede. Sentimento que jorra e tira a razão da pessoa. Ao invés de contribuir, dificulta.",
+          "elemento": "água",
+          "significado_numero": "Masculino. Princípio"
+        },
+        {
+          "nome": "II Copas",
+          "numero": 2,
+          "tipo": "pip",
+          "simbologia": "dois sentimentos opostos que se misturam. Todos podem se juntar, desde que tenham algo em comum. Leão vermelho: símbolo da atração sexual.",
+          "positivo": "união dos opostos, deu match. Interesses em comum, há uma conexão com o outro, uma junção de carinho e sentimentos. Afinidades, sintonia, alguém vem em nosso auxílio, pessoas que contribuem e melhoram nossa vida. Uniões felizes. Olho no olho, parceria, querer estar junto. Inseparáveis, vai dar certo.",
+          "negativo": "uniões que contaminam, dificultam, prejudicam, atrapalham. Sentimentos doentios. Não se misturam de jeito nenhum. União monstruosa. Obsessões, trocas injustas. Um se beneficia e outro é prejudicado. Antipatia, o santo não bate, disputa, divergência.",
+          "elemento": "água",
+          "significado_numero": "Feminino. Oposição ao 1. Sentir."
+        },
+        {
+          "nome": "III Copas",
+          "numero": 3,
+          "tipo": "pip",
+          "simbologia": "criatividade, vontade de se misturar, criar mais alegrias e possibilidades. Vencer juntos, unidos somos mais fortes. Celebração, festa, rito pagão, abundância, irmandade, amigos, pessoas que se amam. Ritos e devoção para os deuses.",
+          "positivo": "união celebração, alegria, festa, querer bem, felicidade. Estar junto de quem se ama, festa de aniversário, bom humor, ser engraçado, ser alegre, bons sentimentos, graças, gratidão. Comemorar as conquistas, celebrar o tempo que passou e as boas memórias, nostalgia.",
+          "negativo": "se reunir com outras pessoas pra reclamar ou banalizar. Ser superficial, desleixado. Festa sem propósito, excessos, se perder na celebração sem fim. Irresponsabilidade com tudo porque está sempre alegre/festejando. Contar com recursos antes de estarem disponíveis, celebrar antes do tempo. Pessoas juntas que não tem nada de profundo. Cria coisas que não são usadas, memórias excessivas, ilusão de que o passado era melhor, pessimismo. Pessoas que não nos fazem bem. Se perde na ilusão.",
+          "elemento": "água",
+          "significado_numero": "Criatividade. Alegria. Junção do 1 e 2."
+        },
+        {
+          "nome": "IV Copas",
+          "numero": 4,
+          "tipo": "pip",
+          "simbologia": "estabilidade, responsabilidade, seja feliz cumprindo suas promessas e aquilo que você se comprometeu a fazer. Tenha um propósito, mesmo que não queira.",
+          "positivo": "quando aceitamos os nossos compromissos e responsabilidades de bom grado. Abrir os braços para o novo. A vida também é sobre aceitações. Abrir seu coração para outras sensações que são mais estáveis e profundas. Sentimentos enraizados, coisas antigas. Amor mais maduro. Aceitar que o outro pode amar de uma forma diferente. Parar para organizar nossos sentimentos.",
+          "negativo": "não aceitar responsabilidades, imaturidade, birra, procrastinação, não se abrir para o diferente, negação, teimosia, parado, não quer sair do lugar, não quer abrir o coração, quer as coisas como eram no passado. Nega tudo de novo. Cruzar os braços, não sai da zona de conforto.",
+          "elemento": "água",
+          "significado_numero": "Estabilidade. Ordem. Limites."
+        },
+        {
+          "nome": "V Copas",
+          "numero": 5,
+          "tipo": "pip",
+          "simbologia": "tentativa de ser feliz de qualquer jeito. Descobre a tristeza. Dependente, apegado ao passado. Revela sua frustração. Não está conectado com o externo. Continua olhando para as 3 taças (a festa do 3) as outras 2 mostram que toda relação é uma troca.",
+          "positivo": "às vezes precisamos ir para o nosso mundo interno. Se preservar, guardar e se recolher. Buscar a proteção dos sentimentos. Ocultar, esconder. Experiência de autoconhecimento. Não chore o leito derramado, lute pelo o que vale a pena. Proteção espiritual, você sabe a sua importância.",
+          "negativo": "tentar ser feliz, mas falhar, frustração, tristeza profunda. Presa dentro das suas emoções e sentimentos ruins. Vultos, dementadores, insegurança, baixa autoestima. É tudo o te rebaixa e o que te faz se sentir infeliz. Insegurança, muita dor, saudade doentia, sem vontade de viver, isolamento.",
+          "elemento": "água",
+          "significado_numero": "Tentativa. Arriscar. Fora do limite. Problema."
+        },
+        {
+          "nome": "VI Copas",
+          "numero": 6,
+          "tipo": "pip",
+          "simbologia": "reparar a tristeza do V. Reparação afetiva, carinho que chega, uma mão que se estende. Ajuda, resgate, acolhida, ofertar para o outro. Flores brancas: pazes, reconquistas de confiança.",
+          "positivo": "presente, entrega, solução, saída, ajuda que chega, ser acolhido, ser compreendido, reconciliação, reparação. Lembrar dos bons momentos, gente do passado voltando, abraço apertado, ponto final na discussão, recuperar o animo.",
+          "negativo": "drama, dependência, DR sem fim, “você não me ama”, discussões, gente que só piora a situação, chantagem emocional, ameaças, influenciar o outro, dar ao outro o seu pior, cobrar favores, faz tudo por interesse, pessoas do passado que voltam para dificultar. Fazer o outro aceitar sua vontade. Ao invés de reconciliar, separa.",
+          "elemento": "água",
+          "significado_numero": "Reajuste. Reparação. Família."
+        },
+        {
+          "nome": "VII Copas",
+          "numero": 7,
+          "tipo": "pip",
+          "simbologia": "acreditar sem ver, espiritualidade, alguém que faz um milagre, fé, ver com o coração, uma nova forma de ver o mundo. Sexto sentido.",
+          "positivo": "visão de um novo tempo, milagre, percepção mediúnica, visões, prontificas, amar, devotar-se. Olhar além, com os olhos do coração. Sinais, presságios. Amar é mais do que ter, sem aprisionar, insistência no amor maior, amor incondicional, admiração, amor do mundo espiritual. Ver espíritos. Grande sonho, um mundo melhor, esperança.",
+          "negativo": "vê milhares de coisas na frente, desnorteado, vê pelo em ovo, mania de perseguição, acredita que tudo e todos estão contra ele, pessimismo. Viaja na maionese, vive no mundo da lua, vê coisas ruins (monstros, obsessores), às vezes ela mesma atrai isso. Não enxerga o mundo espiritual. “Viagem” que te leva a perturbação, viagem que não vai ser boa. Ilusões, fantasias, pavores.",
+          "elemento": "água",
+          "significado_numero": "Vontade. Espiritualidade. Persistência. Acreditar. Fazer mais."
+        },
+        {
+          "nome": "VIII Copas",
+          "numero": 8,
+          "tipo": "pip",
+          "simbologia": "abundância de sentimentos. O importante é viver uma vida feliz. A felicidade é um processo. Aproveitar cada momento.",
+          "positivo": "em busca de um amor de verdade, reconhece que certa coisa não faz mais sentido e podemos caminhar livremente. Tudo é um grande aprendizado. Ser feliz é uma construção diária. Se afasta do que não te faz feliz. Vai buscar seu sonho, sua alegria, sua realização. Bússola do coração alinhada e direcionada para um oriente luminoso para encontrar melhores resultados. Sai da vida comum para viver uma vida maior e mais completa. O que faz o seu coração brilhar? O que eu posso fazer pra ser feliz? A felicidade só depende de você.",
+          "negativo": "se retirar da vida, não encarar seus medos, busca incessante de alegrias pueris, estar sempre em busca de mais, mas nunca encontrar. Pessoa sedenta de afeto, relações, pessoas, totalmente carente. Não consegue olhar para dentro, não quer nem olhar para o passado. Sempre dá as costas para o outro e para os sentimentos. Fugir de si mesmo. Distanciamento em relações, não quer mais estar junto. Não ouve a própria consciência e nem o coração. Espíritos perdidos, pessoas perdidas buscando saciar seus vícios e amortecer suas dores.",
+          "elemento": "água",
+          "significado_numero": "Produtividade. Prosperidade. Saber usar seus talentos."
+        },
+        {
+          "nome": "IX Copas",
+          "numero": 9,
+          "tipo": "pip",
+          "simbologia": "maturidade dos sentimentos, estar seguro de si, auto estima, olhar fraterno. Orgulho do seu passado e das suas conquistas. Generosidade, fortuna de boa sorte, humildade, amor incondicional.",
+          "positivo": "Confie em você e nos seus sentimentos, mostra suas vitórias, conta tua história. Confia nos seus ancestrais, amor de família, amor responsável. Estar orgulhoso de si e quer ver o outro na mesma situação. Partilha, altruísmo, dividir o que tem. Abra-se para o novo amor.",
+          "negativo": "mesquinho, egoísta, pessoa que quer todo amor, atenção e créditos só para si. Braços cruzados para tudo e todos. Chegou aonde queria e esqueceu suas origens. Ingratidão, arrogância. Telhado de vidro. Cuidado com a vaidade, com o orgulho e mesquinhez. Arrogância. Sempre quer mais, mas não contribui. Ama por interesse, sempre quer ter vantagem. Ajuda as pessoas por aparência.",
+          "elemento": "água",
+          "significado_numero": "Experiência. Maturidade. Trabalho Social. Ajudar os outros."
+        },
+        {
+          "nome": "X Copas",
+          "numero": 10,
+          "tipo": "pip",
+          "simbologia": "realizado, alcançar a felicidade. Vê a beleza do mundo com os olhos de amor. O arco-íris é a felicidade. Banquete, dever cumprido.",
+          "positivo": "felicidade, alegria compartilhada, bênçãos, querer ser feliz. Final feliz, vai dar certo. A obra tá feita. Fica feliz com a felicidade do outro. Encontrou o amor. Receber mais do que se espera. Amar e ser amado. Mundos felizes. Paraíso.",
+          "negativo": "família margarina. Ilusão, passionalidade, tudo fake. Enlouquecido e perdido nos próprios sentimentos, falsa realidade. Era o que queria, mas não aconteceu. Acabou da pior maneira, tinha tudo para ser lindo, mas foi um pesadelo. Frustração.",
+          "elemento": "água",
+          "significado_numero": "Realização. Dignidade. Experiência."
+        },
+        {
+          "nome": "Valete de Copas",
+          "cargo": "Valete",
+          "naipe": "copas",
+          "tipo": "corte",
+          "simbologia": "água + terra. Todo sentimento, vontade de amar e ser amado. Paixão da adolescência. Romance, paixão, ilusão, fantasia. Príncipe de contos de fada. Fofo, encantado, mimado, dramático. Vive no mundo da lua.",
+          "positivo": "força do amor, nostalgia, do encanto. A lente do amor. É quando eu vejo um filhotinho de gato. Despertar o afeto. Vê a vida com os olhos generosos, com doçura, carinho, fala do que se sente. Afeto, carinho, final feliz. Pessoas disposta a amar, se entregar, se doar, estão ou querem se apaixonar. Atencioso, por onde possa despertar encanto.",
+          "negativo": "insuportável, mimado, quer atenção, fantasia demais. “Ninguém me ama, ninguém me quer.” Volátil, tem dificuldade em lidar com os sentimentos. Se afoga nos seus sentimentos. Extremamente carente, dependente, grudento, não cresce, tá sempre na barra da saia da mãe. Amor que vira ódio. Falsidade, manipulador.",
+          "elemento_cargo": "terra",
+          "elemento_naipe": "água",
+          "polaridade": "--",
+          "descricao_polaridade": "ele que recebe o carinho, fofura e amor em pessoa. Criança fofa, amado, mimado"
+        },
+        {
+          "nome": "Cavaleiro de Copas",
+          "cargo": "Cavaleiro",
+          "naipe": "copas",
+          "tipo": "corte",
+          "simbologia": "fogo + água. O cavaleiro que chega trazendo esperança, amor, perdão, beleza do sonhar. Príncipe encantado. Bem feitores espirituais. Está indo coletar água. Cavalo doce, elmo com asas: sua cabeça está voando. Movimento de amar/sentir.",
+          "positivo": "busca pelo amor, chega para amar. Chega trazendo boas novas, carinho, aconchego. Anuncia a cura que chega, a fantasia que vira realidade, príncipe encantado, ama gêmea, médico, força de ajuda, vem trazendo um remédio. Renuncia sua vida para um bem maior. Expansão de consciência coletiva. Tem vontade de estar em casa, a família é muito importante. Faz tudo com carinho. Deseja agradar e fazer o outro feliz. Grandes aliados, pessoas que nos ajudam, doação, o que fazemos por quem amamos.",
+          "negativo": "movimento de odiar, de querer o amor na marra, de querer atenção. Chantagem emocional, cobrar o afeto que não recebeu, lembra de coisas de muito tempo (coisas ruins, lista negra). Faz cara feia, vai mostrar que está chateado. Grudento, necessidade de agradar a todo tempo. Vitimismo, não acha que merecia.",
+          "elemento_cargo": "fogo",
+          "elemento_naipe": "água",
+          "polaridade": "+-",
+          "descricao_polaridade": "age devagar, corajoso covarde (Scooby Doo). Romântico, é mais príncipe encantado"
+        },
+        {
+          "nome": "Rainha de Copas",
+          "cargo": "Rainha",
+          "naipe": "copas",
+          "tipo": "corte",
+          "simbologia": "água + água. Toda referência do amor. Amor incondicional, altruísta, amor pelo outro. Força de amar e sentir. A água pode te levar as alturas e te afogar em alguns instantes. Todo poder de sentir, contato com nosso mundo interior.",
+          "positivo": "pessoa amável, amor incondicional, amor maduro, a grande força de amar. Ama com força, com maturidade, se apaixona, tem fantasias românticas mas tem o pé no chão. Ama seu passado, sua história, sua família, seus filhos. Afeto, cuidar, expressa seu amor e afetividade, pessoas prontas para amar e serem amados. Age em favor do próximo, muito leal. Transformação profunda.",
+          "negativo": "se afoga nos seus sentimentos e dores, super sensível e frágil, “ninguém me ama, ninguém me quer”, egoísmo. Todos precisam amá-la. Ódio, rancor, falsidade, mágoa, culpa profunda. Apego ao passado, não se abre ao novo. Raiva, melodramática, não sabe dizer não e nem se impor. Pessoa enjoada/enjoativa, cheia de vontades.",
+          "elemento_cargo": "água",
+          "elemento_naipe": "água",
+          "polaridade": "--",
+          "descricao_polaridade": "passional, força de amar, chega devagar, tenta compreender o outro."
+        },
+        {
+          "nome": "Rei de Copas",
+          "cargo": "Rei",
+          "naipe": "copas",
+          "tipo": "corte",
+          "simbologia": "ar + água. Sábio, benevolente, generoso, amoroso, empático. Rei do mundo espiritual. Reino do coração. Seu grande poder vem do coração. Expressão artística.",
+          "positivo": "amável, generoso, criativo, sensível, médium, religioso, tem fé, abre mão da sua vida para ajudar o outro, benevolente, altruísta, trabalho voluntário. Amor da vida, alma gêmea, pessoa que te amará, amor verdadeiro. Romântico incurável. Está sempre a disposição do outro.",
+          "negativo": "rei banana, não manda, medroso, infantilizado, mimado, só quer saber do seu próprio desejo/necessidade. Bebe muito para sair do mundo concreto. Não é o amor da vida, grudento, carente. Obsessão espiritual, problemas psíquicos.",
+          "elemento_cargo": "ar",
+          "elemento_naipe": "água",
+          "polaridade": "+-",
+          "descricao_polaridade": "pensa com o coração, generoso. Hesita pela compaixão. Mente do amor. Reage mais do que age."
+        }
+      ]
+    },
+    "paus": {
+      "nome": "Paus",
+      "elemento": "fogo",
+      "cartas": [
+        {
+          "nome": "Ás de paus",
+          "numero": 1,
+          "tipo": "pip",
+          "simbologia": "início do fogo. Princípio de realizar, de conquistar. Tesão muito forte, por tudo. É uma madeira viva. Precisa de combustível.",
+          "positivo": "energia do agora, pra já. Faz agora! Pega o que você tem, vai e realiza. Impulso de fazer. Se fizer algo a respeito agora, a coisa anda. Põem a energia, esforço e atenção. Vai com medo mesmo. Tenha coragem, se movimenta. Agora vai.",
+          "negativo": "ser ansioso, fazer antes do tempo. A carta pede paciência, ir mais devagar. Princípio mal direcionado, que vem na violência, chega na voadora. Explosiva ou falta de explosão. A pessoa não tem o que é necessário para o fogo pegar. Não consegue dar o primeiro passo. Medo ou excesso de coragem que deixa cego. Não se mexe, energia baixíssima.",
+          "elemento": "fogo",
+          "significado_numero": "Masculino. Princípio"
+        },
+        {
+          "nome": "II Paus",
+          "numero": 2,
+          "tipo": "pip",
+          "simbologia": "oposição ao 1. Na carta tem a representação do ás: energia de movimento e o outro é de parada. Quer ver o mundo, quer movimento, mas não sabe se está preparado, se tem energia. Falta alimentar o fogo.",
+          "positivo": "alcançará seus sonhos, vencer, novas aventuras e terá apoio (auxílio, benefícios). Combustível para que o outro brilhe. Se divide em mais de uma responsabilidade e dá conta das duas. Equilibra entre gastar e poupar energias. Parcerias, ajuda. Te dou cobertura, alguém que vem colocar energia para que o outro vá mais longe. Colaboração entre pessoas.",
+          "negativo": "quer ir ver o mundo, quer vitalidade, mas algo o detém. Pode ser falta de energia, trabalho ou coisas que tiram o seu foco, sua energia, sua atenção, seu estado de alerta. Não consegue fazer mais de uma coisa ao mesmo tempo, ou enfrentar 2 batalhas. Ainda não vencer, tem 50% de energia ou quanto mais põem, mais gasta. Nunca sai do lugar, vazamento energético, falta de energia, falta de repouso. Embate, bloqueio auto imposto, limitações.",
+          "elemento": "fogo",
+          "significado_numero": "Feminino. Oposição ao 1. Sentir."
+        },
+        {
+          "nome": "III Paus",
+          "numero": 3,
+          "tipo": "pip",
+          "simbologia": "produz o impossível. A energia do 3 + a energia do fogo. Criatividade para tudo realizar, é só colocar energia. Tem apoio (os 2 bastões).",
+          "positivo": "olhar os horizontes, expansão, além do conhecido. Vontade de fazer, confiança, acreditar que pode e que vai mais longe. Vontade de superar qualquer obstáculo, sonhar alto. Você vai dar um jeito, está decidido. Pensa e já faz. Coragem, dinamismo, viagem longa, provas atléticas, pessoas que vão longe. Pessoas que expandem o seu universo, que estão indo mais longe do que imaginaram, Intercâmbio.",
+          "negativo": "sempre em busca de novas aventuras, novas situações e tudo cada vez mais distante e esquece de criar raízes. Não tem uma relação consigo mesmo, nunca está satisfeito, foge das responsabilidades, infantilidade, coisas feitas por impulso. Uma enrascada atrás da outra. Dá as costas para o aqui e agora, para o seu futuro e para si mesmo. Quer ir embora, mas não faz seus deveres. Inconsequente, negligente, ansioso, passo maior que a perna. Pessoa perdida ou muito distante.",
+          "elemento": "fogo",
+          "significado_numero": "Criatividade. Alegria. Junção do 1 e 2."
+        },
+        {
+          "nome": "IV Paus",
+          "numero": 4,
+          "tipo": "pip",
+          "simbologia": "união de tudo que o fogo precisa: faísca, oxigênio e a capacidade de se expandir, o fogo tá pronto. É uma fogueira. Bonança, celebrações, estabilidade da alegria. As coisas estão acontecendo. União dos esforços.",
+          "positivo": "celebrações, uniões, felicidades, sintonia, energias estáveis, harmonia. Trabalhos em equipe bem feitos. Saber a hora de colocar a energia e a hora de descansar. Estabilidade energética. As coisas estão fluindo. Tá tudo no ritmo, realizações. Vai dar tudo certo. Bons presságios.",
+          "negativo": "sensação de não conseguir estabilizar os esforços. Eventos, situações ou coisas com dificuldade para acontecer, com atritos. Rixas, discórdia, competitividade. Excessos, não tem equilíbrio nem harmonia. Uma coisa que não acontece, não sobe no pódio porque falta coordenação das energias.",
+          "elemento": "fogo",
+          "significado_numero": "Estabilidade. Ordem. Limites."
+        },
+        {
+          "nome": "V Paus",
+          "numero": 5,
+          "tipo": "pip",
+          "simbologia": "parte pra guerra pra ser o super-herói. Quer mostrar o seu valor. Tentativa de mostrar sua força.",
+          "positivo": "parte pra briga, o não você já tem. Insiste, vai com medo mesmo, se impõem, fale não, resista, invente. Tentar é melhor do que não fazer nada. Faz cara de mal, ter coragem pra enfrentar seus problemas. Coloque-se, destaque-se. Faça algo a respeito, mostra a sua força.",
+          "negativo": "disputa, briga, rixa. Violência. Pessoas que não chegam a lugar nenhum, cada um quer mostras sua força e se impor sobre os outros. Anuncia situações conflitantes. Sexualidade descontrolada. Rivalidades terríveis, inimigos. Perseguição e inimigo espiritual. Pessoas/espíritos que vão contra o consulente. Espíritos raivosos. Oposição, confusão, disputas. Quase uma guerra. Toda a tentativa de destruir.",
+          "elemento": "fogo",
+          "significado_numero": "Tentativa. Arriscar. Fora do limite. Problema."
+        },
+        {
+          "nome": "VI Paus",
+          "numero": 6,
+          "tipo": "pip",
+          "simbologia": "energia do 6 + fogo. Resolve os problemas ganhando. Reparação por meio da conquista. Todos os bastões estão para cima glorificando o sexto bastão. Cavalo branco: nobreza, vitória, força maior da natureza. Coroa de louros símbolo da vitória, jogos olímpicos. Bastão coroado: superou a si mesmo e os oponentes e agora está em glória. Mostrar ao que veio.",
+          "positivo": "glória, êxito, felicidade, conquista. É você ser visto, reconhecido, validado com glória. Conquista, superação de problemas, força para passar por cima dos obstáculos. Conquista seu espaço. Quebrar barreiras, abrir caminhos e passar com luz e força. Grandes lideres, pessoas que se destacam. Histórias de superação.",
+          "negativo": "anuncia o triunfo do inimigo e a perda de alguém. Ameaças, violência, pessoas que impõem sua vontade, amedronta ao invés de inspirar. Estamos do lado dos perdedores, falsa sensação de vitória. Pavor que vem com violência e oposição.",
+          "elemento": "fogo",
+          "significado_numero": "Reajuste. Reparação. Família."
+        },
+        {
+          "nome": "VII Paus",
+          "numero": 7,
+          "tipo": "pip",
+          "simbologia": "energia do 7 (acreditar) + bravura de paus. Fogo espiritualizado, energia que emanamos. Auto confiante, energia para levantar. Superação de si mesmo, homem com cara de mal, protegendo seu espaço. Resistência, energias protetoras.",
+          "positivo": "tem a energia necessária para enfrentar os obstáculos, tem a fé, auto confiança, entusiasmo. Impulso de superar as dificuldades para alcançar os resultados. Proteção, fé, espiritualidade, atividades que desenvolvem nossa energia. Espíritos protetores. Barreiras para que as pessoas não invadam nosso espaço. Acreditar, resistir, fazer o seu melhor e acreditar que vai alcançar. O obstáculo incentiva porque ajuda a se desenvolver. Pessoas ou situações que nos protegem e nos defendem.",
+          "negativo": "pessoas arriscas que se protegem usando a violência. Medo transformado em agressividade. Casca grossa, pavio curtíssimo. Ataque que a pessoa dá ou recebemos. Pessoa indisponível, evitando, não acessível. Oposições, barreiras, pessoa bloqueada. Influência espiritual que dificultam a expansão da nossa energia. Covardia. A pessoa não conversa, já sai no ataque. Ataques mágicos, energéticos. Disputa.",
+          "elemento": "fogo",
+          "significado_numero": "Vontade. Espiritualidade. Persistência. Acreditar. Fazer mais."
+        },
+        {
+          "nome": "VIII Paus",
+          "numero": 8,
+          "tipo": "pip",
+          "simbologia": "produtividade do 8 + a vontade de se expressar. Acelera tudo. Bastões alcançando seu destino. Fala de movimento, coisas rápidas. Mira longe, sonha alto. Tem muita energia. Muita velocidade, bravura.",
+          "positivo": "grande acelerar rumo ao sucesso. Caminhos, possibilidades, luz, glória, salvação chegando. Luz no fim do túnel. Você vai conseguir e vai saber lidar. Agitação boa, correria do dia a dia que motiva, traz alegria. Acelera, velocidade. Diz: faz rápido, vai dar certo, acelera o passo, vai mais rápido, melhora sua cadência. Na mira, acertar, alcançar, conquista gloriosa. Ninguém te segura, você vai mais longe. Caminhos e possibilidades sendo desvendados. Energia e ímpeto para viver. Grande força de movimento.",
+          "negativo": "acelerar sem rumo, muito rápido. Não chegará onde deve. Tiro de canhão pra pouca coisa. Energia descompensada, desorientada. Cuidado: tá muito rápido, com a violência, com a imposição. Quer a vitória a qualquer custo, sem escrúpulos. Velocidade imensa que não leva a nada e que pode te ferir se não tiver um planejamento. Ir com muita sede ao pote, teimosia, não olhar pra frente, passar por cima dos outros. Ataques, pragas proferidas, isso traz problema para a energia do consulente.",
+          "elemento": "fogo",
+          "significado_numero": "Produtividade. Prosperidade. Saber usar seus talentos."
+        },
+        {
+          "nome": "IX Paus",
+          "numero": 9,
+          "tipo": "pip",
+          "simbologia": "maturidade do 9 + fogo. Com grandes poderes vem grandes responsabilidades. Você será forte para que? Precisa resistir pelo outro. Se mantem disponível para ajudar os outros.",
+          "positivo": "responsabilidade pelos seus atos, pelas pessoas que prometeu ajudar. Pessoas que realizam o impossível, que realizam grandes obras, que realizam um mundo de responsabilidades porque acreditam na sua capacidade. Entende que está ali para ajudar a todos. Dá o nosso melhor, se esforça e o resultado vem. Está cansado com, com sono porque gasta muita energia. Se sacrifica pelos grandes ideais, atos heroicos, pessoas lutadoras, história de superação. Com esforço, vontade e disciplina é possível fazer qualquer coisa, inclusive vencer nosso próprio cansaço.",
+          "negativo": "escravidão, trabalho forçado, sem medidas, escravo do próprio esforço. Grandes realizações de coisas que não ajudam, fazer coisas/atos contra a humanidade/pessoas. Esforços trevosos. Trabalho grandioso, mas violento, exército que passa por cima das pessoas. Fogo, violência. Projeto que é abandonado por falta de energia. Irresponsabilidade, sem maturidade. Energia desperdiçada ou usada para violência. Força alguém a fazer algo. Tristeza, dificuldade, impotência, exaustão, sem forças. Ou alto grau de ansiedade, estado de alerta. Não consegue se manter em estado sereno.",
+          "elemento": "fogo",
+          "significado_numero": "Experiência. Maturidade. Trabalho Social. Ajudar os outros."
+        },
+        {
+          "nome": "X Paus",
+          "numero": 10,
+          "tipo": "pip",
+          "simbologia": "grande herói, se superou, é o senhor de si e grande protetor do mundo. Dominou sua própria força. Carrega todo o peso do naipe. Energia alta e vigorosa. Força em movimento.",
+          "positivo": "realização, capacidade de fazer, energia alta, pessoa poderosa. Grandes feitos. Faz muito esforço e dá conta, tudo flui. Superar obstáculos com facilidade porque tem força e energia. Muita energia espiritual e que chegam até ela. Força dentro de nós.",
+          "negativo": "tenta fazer tudo sozinho, centralização, esforço que está além das forças, impede, dificulta, traz tristeza, fraqueza. Ataques/problemas de grandes proporções, mais forte e maior do que a pessoa pode resolver. Opositores poderosos, espíritos trevosos. Esforço impossível de ser mantido, dificuldade imensa para executar tarefas. Queimar todas as fichas. Picos de energia que podem machucar. Não existe partilha nem trabalho em equipe. Vontade de dominar tudo e todos.",
+          "elemento": "fogo",
+          "significado_numero": "Realização. Dignidade. Experiência."
+        },
+        {
+          "nome": "Valete de Paus",
+          "cargo": "Valete",
+          "naipe": "paus",
+          "tipo": "corte",
+          "simbologia": "terra + fogo. Impulsivo, hiperativo, energia sem fim. Busca aventuras, atlético, muito desejo/tesão.",
+          "positivo": "pessoa com energia, dinâmica, atlética, pouca paciência para esperar, proativo. Imediato, precisa se mexer, jovialidade, não tem tempo ruim, viajantes, aventureiros. Tem força para realizar o que deseja, mesmo que pareça impossível. Corajoso, valente, empolgado. Desejo sexual, tesão.",
+          "negativo": "impulsivo, faz sem pensar, começa mil coisas e não termina, hiperativo, empolgado demais, impaciente, explosivo, se irrita fácil. Inconsequente, violento, agressivo. Enrascada, problema. Excesso do tesão, pega fogo por qualquer coisa. Imprevisível. Não sabe ouvir não.",
+          "elemento_cargo": "terra",
+          "elemento_naipe": "fogo",
+          "polaridade": "-+",
+          "descricao_polaridade": "arya stark. É uma bombinha, não para quieto. Fogo mal direcionado."
+        },
+        {
+          "nome": "Cavaleiro de Paus",
+          "cargo": "Cavaleiro",
+          "naipe": "paus",
+          "tipo": "corte",
+          "simbologia": "fogo +fogo. Bravura, movimento. Cavaleiro luz, é o calor que chega e se posiciona. Traz esperança, homem corajoso, protege os mais fracos.",
+          "positivo": "corajoso, vai enfrentar os problemas com coragem, vai derrubar o obstáculo, sabe que vai ganhar. Muita força e coragem. Competitivo, herói, que alcançar o impossível. Quer começar logo, empolgado, leva a luz por onde passa. Força e ajuda espiritual.",
+          "negativo": "força do fogo, incêndio, espalha o terror, violência. Tesão que cansa, bruto, sexualidade incansável. Pavio curto, chega com o pé na porta, intolerante, impaciente, agressivo, grosso. Pessoas que atacam (físico, espiritual, energético), inimigos se aproximando com violência e agressividade.",
+          "elemento_cargo": "fogo",
+          "elemento_naipe": "fogo",
+          "polaridade": "++",
+          "descricao_polaridade": "coragem, bravura, aventureiro. Faz sem estratégia."
+        },
+        {
+          "nome": "Rainha de Paus",
+          "cargo": "Rainha",
+          "naipe": "paus",
+          "tipo": "corte",
+          "simbologia": "água + fogo. Amor pelas batalhas, aventura, adrenalina. É admirada pelo povo. Corajosa, impetuosa, doce. Rainha bruxa, guerreira, amada.",
+          "positivo": "forte, poderosa, se destaca pelos seus talentos, bonita, sensual, sedutora, atlética, tem entusiasmo, proativa, bruxa poderosa, adorada pelas pessoas, famosa, guerreira, corajosa. Pronta para o combate. Nobre, origem elevada, conectada com as luzes. Faz aqui e agora e acerta o objetivo.",
+          "negativo": "barraqueira, violenta, grita, não tem modos, perde a classe, sem paciência, fala muito palavrão. Inimigos espirituais ou bruxos, magia contra. Lidera grupo de ataque. Famosa pelos maus feitos, temida, brega. Impaciente.",
+          "elemento_cargo": "água",
+          "elemento_naipe": "fogo",
+          "polaridade": "-+",
+          "descricao_polaridade": "protetora, valente. Não foge da batalha. Ama desejando."
+        },
+        {
+          "nome": "Rei de Paus",
+          "cargo": "Rei",
+          "naipe": "paus",
+          "tipo": "corte",
+          "simbologia": "ar + fogo. Pensa longe, avança com velocidade, pensa com a mente de combate. Rei da expansão. Luz, famoso, admirado e amado pelo povo. Vai longe. Cultura, inteligência, tesão, atlético, muita energia.",
+          "positivo": "nobre, valente, protetor, líder nato, palavra forte, admirado e seguido pelo povo. Aliados pelo mundo todo, viagens a negócio ou para fazer esportes, incansável, metabolismo bom, horado, pensa rápido. Muito desejo, tesão, conquistas. Empolgado, motivado, contagiante. Bruxo.",
+          "negativo": "violência grande, impaciente, não é racional, perde a dignidade, querem alguém/qualquer coisa a qualquer custo. Ambição desenfreada, só ele pode brilhar. Competitividade violenta, não importa os meios. Vive estressado e ansioso. Bruxo pro mal. Trevas.",
+          "elemento_cargo": "ar",
+          "elemento_naipe": "fogo",
+          "polaridade": "++",
+          "descricao_polaridade": "age sem pensar direito, impulsivo. Guerreiro estratégicos. Pavio curto."
+        }
+      ]
+    },
+    "ouros": {
+      "nome": "Ouros",
+      "elemento": "terra",
+      "cartas": [
+        {
+          "nome": "Ás de Ouros",
+          "numero": 1,
+          "tipo": "pip",
+          "simbologia": "o principio da terra é uma semente. Revela a fertilidade, só precisa do momento certo. Te é dado um talento. Algo pode brotar, você já tem o recurso, está materializado. Principio da conquista e materialização do que se deseja.",
+          "positivo": "você tem talento, tem os recursos e tem a moeda. A semente vai brotar. Anuncia que as coisas vão acontecer. Vai receber algo, se souber usar vai dar certo. Dádivas que recebemos da vida",
+          "negativo": "moedas que recebemos e enterramos ou a falta de recurso. Você não terá o necessário para que a coisa se materialize. Ou se materializa e ninguém usa. Semente podre, não se manifesta. Sementes perigosas: algo que lhe é dado que te custará muito caro. A falta da moeda, mal uso do que lhe é dado.",
+          "elemento": "terra",
+          "significado_numero": "Masculino. Princípio"
+        },
+        {
+          "nome": "II de Ouros",
+          "numero": 2,
+          "tipo": "pip",
+          "simbologia": "ter ou não ter? Uma moeda é matéria e a outra não. O malabarista se esforça para fazer mais com o que tem. Nem sempre temos tudo o que é necessário. Nem todo esforço compensa: tem dias melhores que outros (dias de luta, dias de glória). Oscilação nos recursos, tempos de bonança e escassez.",
+          "positivo": "bom uso dos recursos, expandir as possibilidades usando aquilo que temos. “Eu me viro bem com o que a vida me traz”. Como ganhar mais com uma boa decisão? Investir metade, dividir bem os recursos, administrar bem, lidar bem com as coisas. Organização, ordem, cada um faz a sua parte. O perfeito é o inimigo do bom.",
+          "negativo": "tem menos do que é necessário. Falta: recurso, jogo de cintura, administração. Tem que escolher um, tipo jogo do resta 1, cobre a cabeça e descobre o pé. Não sabe lidar, não sabe usar os recursos. A pessoa diz que tem, mas não tem. Ou dizem que vão te ajudar e você não pode contar com essa pessoa. Uma parte vem, mas a outra pode demorar, ou nem vem.",
+          "elemento": "terra",
+          "significado_numero": "Feminino. Oposição ao 1. Sentir."
+        },
+        {
+          "nome": "III de Ouros",
+          "numero": 3,
+          "tipo": "pip",
+          "simbologia": "criatividade + fertilidade. É uma construção que demanda tempo, não é rápido. Dinheiro aplicado. Carta das construções. O que você investe?",
+          "positivo": "obras em movimento, coisas se realizando, trabalho em equipe, estudos dando fruto. Coisas que colocamos nosso empenho se desenvolvendo. Está crescendo, tomando forma, brotinho saindo da terra. Sensação de trabalho bem feito, que as coisas estão sendo aplicadas. Ver o investimento fazer sentido. Ainda não tá pronto, mas já dá pra ver os resultados.",
+          "negativo": "trabalhos que quanto mais você investe, mais difícil fica. Prejuízo, atraso atrás de atraso. A construção vai devagar. Lerdeza, não vinga. A ideia é boa, mas não acontece. Custo maior do que era previsto.",
+          "elemento": "terra",
+          "significado_numero": "Criatividade. Alegria. Junção do 1 e 2."
+        },
+        {
+          "nome": "IV de Ouros",
+          "numero": 4,
+          "tipo": "pip",
+          "simbologia": "estabilidade + terra que adora segurança. Seguro do seu dinheiro, do seu valor. Rotina dos recursos. Controlar, reter, carta do porquinho. Vontade de se sentir seguro.",
+          "positivo": "segurança material, rotina dos recursos, pessoa organizada. Corpo forte, saudável. Vai dar certo sim, você está seguro. Relacionamentos, pessoas, empregos estáveis. Pessoas precavidas, vida estável. Manter os olhos atentos nas suas coisas: atenção, se organiza melhor, guarda, protege, guarde com segurança, não perca essa oportunidade.",
+          "negativo": "avareza. A pessoa guarda dinheiro, mas tem necessidades. Controle, vontade de ter, não pode perder nada. Tio Patinhas. Vida miserável com recursos. Possessividade, quer tudo pra si, grandes acumuladores. Não liberta, está fechado para a vida. Sempre atenta ao que pode pedir.",
+          "elemento": "terra",
+          "significado_numero": "Estabilidade. Ordem. Limites."
+        },
+        {
+          "nome": "V de Ouros",
+          "numero": 5,
+          "tipo": "pip",
+          "simbologia": "perda dos recursos/dinheiro/valores morais. Privação de recursos/sono/alimento/saúde. A cena do abandono. Tentativa de conquistar.",
+          "positivo": "eu sei que você não tem, então peça ajuda, diz que você ta precisando, assuma que necessita de algo que não tem. Momento em que precisamos pedir ajuda. Reconhecer que não tem ou que perdeu. Se você pedir, alguém vai te oferecer. Melhore sua alimentação, sua casa. Ver outros horizontes. Vá em busca, vá a luta pelo o que você quer. Não dá pra só receber.",
+          "negativo": "miséria, privação, perda, falência. Ficar sem nada. Anuncia a perda. Está necessitada. Dívidas, nome sujo, perdeu tudo. Doença, corpo com problemas, alimentação ruim, falta de nutrientes. Ser esquecido, ser excluído, expulsão, marginalizado, cansaço. Muita dificuldade.",
+          "elemento": "terra",
+          "significado_numero": "Tentativa. Arriscar. Fora do limite. Problema."
+        },
+        {
+          "nome": "VI de Ouros",
+          "numero": 6,
+          "tipo": "pip",
+          "simbologia": "reparação 6 + germinar/cuidar. Vontade de sair da miséria do 5. Fazer as contas para saber quanto de recurso ainda tem. Como fazer para o dinheiro chegar. Vai pedir recursos, reparação financeira e dos valores.",
+          "positivo": "consegue recursos: peça e você terá ou mostre seus méritos (lembrar de quando quer pedir aumento). Só precisa mostrar que você tem, o recurso está disponível, colaboração, medir o que fazer, reparação, partilha de bens. Chega com abundância. Carta de ajuda.",
+          "negativo": "empréstimos com juros altíssimos, pedido de ajuda negado, recursos requisitados e não são atendidos, não recebe, não tem ajuda. Não faz nada para melhoras, só pede, pede por hábito. Querer e não merecer, gasta demais com pequenas coisas até ficar sem dinheiro. Auto sabotagem, ânsia de ser valorizado, comprar os outros, mima os outros, se rebaixa.",
+          "elemento": "terra",
+          "significado_numero": "Reajuste. Reparação. Família."
+        },
+        {
+          "nome": "VII de Ouros",
+          "numero": 7,
+          "tipo": "pip",
+          "simbologia": "7 acreditar + terra que é muito pé no chão. Deus ajuda quem cedo madruga. Se esforça, não para, trabalho incansável. Tem um objetivo muito claro.",
+          "positivo": "dedicação, persistência. Está contemplando a obra. Você sabe que está certo. Muito trabalho que vale a pena. Logo mais está pronto. O investimento vai dar certo. Não dá pra reparar da noite pro dia, persista. Vai dar trabalho, vai dar certo.",
+          "negativo": "trabalho sem fim, nunca vai acabar, exaustão física, sem forças. Dar murro em ponta de faca, tá esperando uma coisa que não vai vir. Dormir sem qualidade, problemas com repouso. Não abre mão, teimosia.",
+          "elemento": "terra",
+          "significado_numero": "Vontade. Espiritualidade. Persistência. Acreditar. Fazer mais."
+        },
+        {
+          "nome": "VIII de Ouros",
+          "numero": 8,
+          "tipo": "pip",
+          "simbologia": "produtividade 8 + fertilidade. Ganha mais do que gasta, tem lucros. Fortuna, cheio de trabalho e isso é ótimo. Capacidade de prosperar/enriquecer com o trabalho e alcançar a perfeição. Trabalho com qualidade.",
+          "positivo": "trabalho com bom rendimento, excelentes resultados com os empreendimentos, dinheiro rende, trabalho prospera, as pessoas vão até você. Lucros, muitos trabalhos. As coisas estão dando certo, rotina na relação, que é valorizado pelos 2. Abundância, ótimos resultados. Trabalhou muito agora colhe os frutos. Vida com mais qualidade.",
+          "negativo": "trabalho com alto custo e pouco lucro, tentativas frustradas. O trabalho aumentou e não da conta da demanda. Vende coisa com valor baixo. Tratamento caro sem retorno, pessoa lenta, atrasada, cheia de pendências, burocracia. Demora muito e não da em nada. Não lucra.",
+          "elemento": "terra",
+          "significado_numero": "Produtividade. Prosperidade. Saber usar seus talentos."
+        },
+        {
+          "nome": "IX de Ouros",
+          "numero": 9,
+          "tipo": "pip",
+          "simbologia": "maturidade da terra. Usa consciência, responsabilidade e ética aquilo que a vida traz. Aprendeu a usar seus recursos. Aproveitar, sensorialidade, riqueza, abonança. Carta ecológica. Sentimento de realização.",
+          "positivo": "lucro, abonança, fartura. Tudo de boa qualidade. Muito bom, muito bem feito. Vive como rainha/rei. Cada vez mais lucrativo. Valores morais elevados, bom caráter. Entende o valor das coisas/pessoas. Aproveitar bem a vida.",
+          "negativo": "superficial, futilidade, recursos desperdiçados. Sofre da fartura, procurar pelo em ovo. Tem as coisas, mas não liga. Nada tem brilho nela e nem vê brilho nos outros. Acúmulo de coisas. Tem um bom relacionamento, mas não dá valor. Exigência, quer tudo perfeito. Pessoa vazia, blasé. Grandes dívidas, vive de aparências.",
+          "elemento": "terra",
+          "significado_numero": "Experiência. Maturidade. Trabalho Social. Ajudar os outros."
+        },
+        {
+          "nome": "X de Ouros",
+          "numero": 10,
+          "tipo": "pip",
+          "simbologia": "realização material. Levou muito tempo, mas conseguiu. Riqueza da vida, dos valores, bom uso de tudo o que a vida trouxe.",
+          "positivo": "realização material. Sonho realizado, obra feita. Demorou, você deu tudo o que tinha, investiu tempo e deu tudo certo. Homem bem colocado na vida, pessoas realizadas. Tudo estruturado, maravilhoso. Vai ficar muito tempo, encontrar grandes sentidos. Relação pra vida, felizes para sempre.",
+          "negativo": "obra feita, mas inútil. Desperdício, negligência, herança não valorizada ou não sabe administrar. Não se sente realizada. Tudo para si, vazio existencial. Outros usufruem do que você ganhou. Pessoas oportunistas, que comem pelas bordas. Final da vida sem nada, sem recursos, não aproveitou a vida.",
+          "elemento": "terra",
+          "significado_numero": "Realização. Dignidade. Experiência."
+        },
+        {
+          "nome": "Valete de Ouros",
+          "cargo": "Valete",
+          "naipe": "ouros",
+          "tipo": "corte",
+          "simbologia": "terra + terra. Grande esperança para o futuro, tesouro. Neto/filho herdeiro. Acumulador, tende a engordar. Boa condição financeira. Economiza e trabalha desde cedo. Valorização da matéria e do dinheiro. Gosta do bom e do melhor. Prosperidade, bonança, fertilidade.",
+          "positivo": "força do trabalho, põem a mão na massa, faz, cria, produz. Ta aprendendo a por a mão na massa. Produtivo, artesão, amam seu trabalho, querem ter suas coisas, junta dinheiro. A marca não importa, mas sim a qualidade. Ta aprendendo a administrar seus recursos. Fértil, tem muito potencial. Herança, recebe investimentos.",
+          "negativo": "parado, inútil, quer ser sustentado, interesseiro, não quer fazer esforço, preguiçoso. Acumulador, mão de vaca, não tem propósito. Não é próspero, infértil. Conformismo, zero ambição. Não faz bom uso dos recursos.",
+          "elemento_cargo": "terra",
+          "elemento_naipe": "terra",
+          "polaridade": "--",
+          "descricao_polaridade": "o grande futuro. A gordinha que come. Não pode se manter, se cuidar."
+        },
+        {
+          "nome": "Cavaleiro de Ouros",
+          "cargo": "Cavaleiro",
+          "naipe": "ouros",
+          "tipo": "corte",
+          "simbologia": "terra + fogo. Está enraizado. Vai plantar no solo que ele está. Tá construindo seu futuro, está investindo.",
+          "positivo": "empenho, trabalho duro, tem muito trabalho, está focado, produtivo, incansável, acorda cedo, realiza com disciplina, ordem e persistência. Usa bem seus recursos, oportunidade de trabalho/negócio. Relacionamento que está sendo trabalhado para durar para sempre. Vontade e insistência. Não precisa ver para crer. Nobre, bons empregos, disciplinas.",
+          "negativo": "parado, não sai do lugar, parou no tempo, sem ambição, teimosia, acumulador, ideia fixa, não aproveita a vida nem o dinheiro. Trabalha sem parar, preguiça sem fim, problema físico, sedentário.",
+          "elemento_cargo": "fogo",
+          "elemento_naipe": "terra",
+          "polaridade": "+-",
+          "descricao_polaridade": "não se mexe, está onde precisa, tá economizando, acumulando."
+        },
+        {
+          "nome": "Rainha de Ouros",
+          "cargo": "Rainha",
+          "naipe": "ouros",
+          "tipo": "corte",
+          "simbologia": "água + terra. Rainha da fartura, riqueza, prosperidade. Fértil. Consistência, é o próprio verão. Muitos filhos. Nutrição, traz saúde.",
+          "positivo": "fertilidade, fartura, abundância, mão na massa, faz o que precisa ser feito. Se adapta fácil, resistente, paciente, tranquila, compreensiva, zelo. Força dos negócios, incansável para alcançar seus objetivos, faz porque ama aquilo. Administra com seriedade. Econômica, tem dinheiro, tem recursos, opera milagres.",
+          "negativo": "manipuladora, explora o outro, aprisiona através do cuidado, suga o outro, se nutre das coisas dos outros, centralizadora, mão de vaca. Ama demais o dinheiro, possessiva, guarda tudo para si. Infértil. Tudo o que põem a mão vira problema, tem dívidas, dificuldade financeira, excesso de gastos. Tudo tá errado, reclama muito. Teimosa, instável.",
+          "elemento_cargo": "água",
+          "elemento_naipe": "terra",
+          "polaridade": "--",
+          "descricao_polaridade": "ter para guardar, nutrir, proteger. Quer usar os recursos para ajudar quem não tem. Rainha fértil."
+        },
+        {
+          "nome": "Rei de Ouros",
+          "cargo": "Rei",
+          "naipe": "ouros",
+          "tipo": "corte",
+          "simbologia": "ar + terra. Focado em sucesso financeiro, empreendedor, consistência, trabalho bem recompensado. Riqueza, acumulador. Abundância, fartura, segurança. Está pronto para o combate.",
+          "positivo": "fartura, riqueza, abonança, muita saúde, longevidade, tem empresa, propriedades. Está sempre fazendo mais riquezas. Meio Midas, tudo o que põem a mão vira ouro. Fértil, realizado, tem tudo que precisa, investidor. Abundância. Está satisfeito.",
+          "negativo": "só trabalha, compra tudo com dinheiro, materialista, só se importa com dinheiro. Acumula, está sempre doente, preguiça, só usufrui e não produz. Consumista, tira da família, egoísta, egocentrismo. Mão de vaca, vive na miséria quando tem dinheiro, teimoso.",
+          "elemento_cargo": "ar",
+          "elemento_naipe": "terra",
+          "polaridade": "+-",
+          "descricao_polaridade": "pensa em ter, todas as possíveis em ganhar. Acumular. Possessividade."
+        }
+      ]
+    }
+  }
+}
