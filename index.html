@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tarot — Leitura das Cartas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -26,6 +26,11 @@
       --pos-text:     #7dbb8e;
       --neg:          #5c1e1e;
       --neg-text:     #c07d7d;
+
+      /* Configurações de Leitura */
+      --font-body: 'Lora', Georgia, serif;
+      --font-size-base: 0.98rem;
+      --line-height-base: 1.8;
     }
 
     html { scroll-behavior: smooth; }
@@ -33,9 +38,12 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'IM Fell English', Georgia, serif;
+      font-family: var(--font-body);
+      font-size: var(--font-size-base);
+      line-height: var(--line-height-base);
       min-height: 100vh;
       overflow-x: hidden;
+      transition: font-size 0.2s ease, line-height 0.2s ease;
     }
 
     body::before {
@@ -255,7 +263,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border);
       color: var(--text);
-      font-family: 'IM Fell English', serif;
+      font-family: var(--font-body);
       font-size: .92rem;
       padding: .75rem 1rem;
       outline: none;
@@ -430,11 +438,13 @@
     .lbl-ex::after   { background: rgba(92,32,128,.2); }
 
     .m-text {
-      font-style: italic;
-      line-height: 1.75;
-      font-size: .93rem;
+      font-style: normal;
+      font-family: var(--font-body);
+      line-height: var(--line-height-base);
+      font-size: calc(var(--font-size-base) * 1.02);
+      transition: font-size 0.2s ease, line-height 0.2s ease;
     }
-    .txt-sim { color: var(--text-dim); }
+    .txt-sim { color: var(--text-dim); font-style: italic; }
     .txt-pos {
       color: var(--pos-text);
       background: rgba(30,92,46,.07);
@@ -511,18 +521,186 @@
       letter-spacing: .05em;
     }
 
+    /* ─── Readability Panel ────────────────────── */
+    .readability-toggle {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      z-index: 1000;
+      background: rgba(16, 13, 32, 0.75);
+      border: 1px solid var(--border);
+      color: var(--gold-light);
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      cursor: pointer;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+    .readability-toggle:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 15px rgba(201, 168, 76, 0.3);
+      transform: translateY(-1px);
+    }
+    .readability-panel {
+      position: fixed;
+      top: 5rem;
+      right: 1.5rem;
+      z-index: 1000;
+      width: 280px;
+      background: rgba(17, 16, 40, 0.95);
+      border: 1px solid var(--gold-dim);
+      padding: 1.25rem;
+      display: none;
+      flex-direction: column;
+      gap: 1.2rem;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 0 15px rgba(92, 32, 128, 0.2);
+      animation: rpFadeIn 0.3s ease forwards;
+      border-radius: 6px;
+    }
+    @keyframes rpFadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .rp-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+    }
+    .rp-header h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+    }
+    .rp-close {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+      transition: color 0.2s;
+    }
+    .rp-close:hover {
+      color: var(--gold-light);
+    }
+    .rp-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .rp-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .rp-options {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .rp-opt-btn {
+      flex: 1;
+      background: rgba(7, 5, 15, 0.6);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      padding: 0.4rem;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+    }
+    .rp-opt-btn:hover {
+      border-color: var(--text-dim);
+      color: var(--text);
+    }
+    .rp-opt-btn.active {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      background: rgba(92, 32, 128, 0.25);
+      box-shadow: 0 0 10px rgba(201, 168, 76, 0.15);
+    }
+
     /* ─── Responsive ───────────────────────────── */
     @media (max-width: 640px) {
       .card-slot { max-width: 100%; }
       h1 { font-size: 2.6rem; }
       .btn-count { min-width: 120px; padding: 1rem 1.4rem; }
       #meanings-grid { grid-template-columns: 1fr; }
+
+      .readability-toggle {
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+      }
+      
+      .readability-panel {
+        top: 4.5rem;
+        right: 1rem;
+        left: 1rem;
+        width: auto;
+      }
     }
   </style>
 </head>
 <body>
 
 <div id="stars"></div>
+
+<!-- Painel de Configurações de Leitura (Aa) -->
+<button class="readability-toggle" onclick="toggleReadabilityPanel()" title="Configurações de Leitura">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 7V4h16v3M9 20h6M12 4v16"/>
+  </svg>
+  <span>Leitura</span>
+</button>
+
+<div class="readability-panel" id="readability-panel">
+  <div class="rp-header">
+    <h3>Ajustes de Leitura</h3>
+    <button class="rp-close" onclick="toggleReadabilityPanel()">&times;</button>
+  </div>
+  
+  <div class="rp-section">
+    <div class="rp-label">Tipo de Fonte</div>
+    <div class="rp-options">
+      <button class="rp-opt-btn active" id="btn-font-serif" onclick="setReadabilityFont('serif')">Serifada</button>
+      <button class="rp-opt-btn" id="btn-font-sans" onclick="setReadabilityFont('sans')">Sem Serifa</button>
+    </div>
+  </div>
+
+  <div class="rp-section">
+    <div class="rp-label">Tamanho do Texto</div>
+    <div class="rp-options">
+      <button class="rp-opt-btn" id="btn-size-sm" onclick="setReadabilitySize('sm')">A-</button>
+      <button class="rp-opt-btn active" id="btn-size-md" onclick="setReadabilitySize('md')">Padrão</button>
+      <button class="rp-opt-btn" id="btn-size-lg" onclick="setReadabilitySize('lg')">A+</button>
+    </div>
+  </div>
+
+  <div class="rp-section">
+    <div class="rp-label">Espaçamento de Linhas</div>
+    <div class="rp-options">
+      <button class="rp-opt-btn active" id="btn-height-normal" onclick="setReadabilityHeight('normal')">Padrão</button>
+      <button class="rp-opt-btn" id="btn-height-wide" onclick="setReadabilityHeight('wide')">Amplo</button>
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <header>
@@ -639,8 +817,93 @@ const SPREADS = {
   document.head.appendChild(s);
 })();
 
+/* ── Readability Panel Logic ────────────────── */
+const readabilitySettings = {
+  fontFamily: 'serif',
+  fontSize: 'md',
+  lineHeight: 'normal'
+};
+
+function toggleReadabilityPanel() {
+  const panel = document.getElementById('readability-panel');
+  if (panel.style.display === 'none' || !panel.style.display) {
+    panel.style.display = 'flex';
+  } else {
+    panel.style.display = 'none';
+  }
+}
+
+function setReadabilityFont(type) {
+  readabilitySettings.fontFamily = type;
+  const root = document.documentElement;
+  
+  if (type === 'serif') {
+    root.style.setProperty('--font-body', "'Lora', Georgia, serif");
+    document.getElementById('btn-font-serif').classList.add('active');
+    document.getElementById('btn-font-sans').classList.remove('active');
+  } else {
+    root.style.setProperty('--font-body', "'Inter', sans-serif");
+    document.getElementById('btn-font-serif').classList.remove('active');
+    document.getElementById('btn-font-sans').classList.add('active');
+  }
+  saveReadabilitySettings();
+}
+
+function setReadabilitySize(size) {
+  readabilitySettings.fontSize = size;
+  const root = document.documentElement;
+  const sizes = {
+    sm: '0.9rem',
+    md: '0.98rem',
+    lg: '1.12rem'
+  };
+  
+  root.style.setProperty('--font-size-base', sizes[size]);
+  
+  document.getElementById('btn-size-sm').classList.toggle('active', size === 'sm');
+  document.getElementById('btn-size-md').classList.toggle('active', size === 'md');
+  document.getElementById('btn-size-lg').classList.toggle('active', size === 'lg');
+  
+  saveReadabilitySettings();
+}
+
+function setReadabilityHeight(height) {
+  readabilitySettings.lineHeight = height;
+  const root = document.documentElement;
+  
+  if (height === 'normal') {
+    root.style.setProperty('--line-height-base', '1.8');
+    document.getElementById('btn-height-normal').classList.add('active');
+    document.getElementById('btn-height-wide').classList.remove('active');
+  } else {
+    root.style.setProperty('--line-height-base', '2.1');
+    document.getElementById('btn-height-normal').classList.remove('active');
+    document.getElementById('btn-height-wide').classList.add('active');
+  }
+  saveReadabilitySettings();
+}
+
+function saveReadabilitySettings() {
+  localStorage.setItem('tarot_readability', JSON.stringify(readabilitySettings));
+}
+
+function loadReadabilitySettings() {
+  const saved = localStorage.getItem('tarot_readability');
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      if (parsed.fontFamily) setReadabilityFont(parsed.fontFamily);
+      if (parsed.fontSize) setReadabilitySize(parsed.fontSize);
+      if (parsed.lineHeight) setReadabilityHeight(parsed.lineHeight);
+    } catch(e) {
+      console.error(e);
+    }
+  }
+}
+
 /* ── Load data ──────────────────────────────── */
 async function init() {
+  loadReadabilitySettings();
   try {
     const r = await fetch('tarot.json');
     if (!r.ok) throw new Error('HTTP ' + r.status);
